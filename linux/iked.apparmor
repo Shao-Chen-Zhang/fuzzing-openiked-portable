@@ -1,0 +1,110 @@
+# Last Modified: Thu Apr 14 17:48:19 2022
+abi <abi/3.0>,
+
+include <tunables/global>
+
+profile iked /usr/sbin/iked {
+  include <abstractions/base>
+
+  capability kill,
+
+  # address/route configuration
+  capability net_admin,
+  network netlink dgram,
+
+  # config file
+  include <abstractions/nameservice>
+  /etc/iked.conf r,
+  /etc/iked/** r,
+
+  # systemd-resolved
+  unix bind type=stream addr=@*/bus/iked/system,
+  dbus send
+     bus=system
+     path=/org/freedesktop/resolve1
+     interface=org.freedesktop.resolve1.Manager
+     member=SetLinkDNS
+     peer=(name=(org.freedesktop.resolve1)),
+  dbus send
+     bus=system
+     path=/org/freedesktop/resolve1
+     interface=org.freedesktop.resolve1.Manager
+     member=SetLinkDefaultRoute
+     peer=(name=(org.freedesktop.resolve1)),
+  dbus send
+     bus=system
+     path=/org/freedesktop/network1
+     interface=org.freedesktop.network1.Manager
+     member=SetLinkDNS
+     peer=(name=(org.freedesktop.network1)),
+  dbus send
+     bus=system
+     path=/org/freedesktop/network1
+     interface=org.freedesktop.network1.Manager
+     member=SetLinkDefaultRoute
+     peer=(name=(org.freedesktop.network1)),
+
+  # reexec
+  /usr/sbin/iked ix,
+
+  # priv dropping
+  capability setuid,
+  capability setgid,
+  capability sys_chroot,
+
+  # switch profile
+  owner @{PROC}/@{tid}/mounts r,
+  owner @{PROC}/@{tid}/attr/current w,
+  change_profile -> iked//ca,
+  change_profile -> iked//control,
+  change_profile -> iked//ikev2,
+
+  signal (send) peer=iked//ca,
+  signal (send) peer=iked//control,
+  signal (send) peer=iked//ikev2,
+  signal (send) peer=iked//resolvectl,
+
+  unix (send, receive) type=stream peer=(label=iked//control),
+  unix (send, receive) type=stream peer=(label=iked//ikev2),
+  unix (send, receive) type=stream peer=(label=iked//ca),
+
+  owner /run/iked.sock w,
+  network key raw,
+
+  profile ca {
+    include <abstractions/base>
+
+    # privsep
+    signal (receive) peer=iked,
+    unix (send, receive) type=stream peer=(label=iked),
+
+    # certs/keys
+    /etc/iked/** r,
+  }
+
+  profile control {
+    include <abstractions/base>
+
+    # privsep
+    signal (receive) peer=iked,
+    unix (send, receive) type=stream peer=(label=iked),
+    /run/iked.sock rw,
+
+    # ikectl control sock
+    network unix raw,
+  }
+
+  profile ikev2 {
+    include <abstractions/base>
+
+    # privsep
+    signal (receive) peer=iked,
+    unix (send, receive) type=stream peer=(label=iked),
+
+    # IKEv2
+    network inet dgram,
+    network inet6 dgram,
+    # PFKEY
+    network key raw,
+  }
+}

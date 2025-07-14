@@ -1,0 +1,2242 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      The system is: FreeBSD - 14.3-RELEASE - amd64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /root/openiked-portable/build/CMakeFiles/3.31.7/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /root/openiked-portable/build/CMakeFiles/3.31.7/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_704bf/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_704bf.dir/build.make CMakeFiles/cmTC_704bf.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F'
+        Building C object CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -MD -MT CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
+        FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)
+        Target: x86_64-unknown-freebsd14.3
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/bin/cc" -cc1 -triple x86_64-unknown-freebsd14.3 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F -v -fcoverage-compilation-dir=/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F -resource-dir /usr/lib/clang/19 -dependency-file CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/clang/19/include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 19.1.7 based upon LLVM 19.1.7 default target x86_64-unknown-freebsd14.3
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/clang/19/include
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_704bf
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_704bf.dir/link.txt --verbose=1
+        FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)
+        Target: x86_64-unknown-freebsd14.3
+        Thread model: posix
+        InstalledDir: /usr/bin
+         "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTC_704bf /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o
+        /usr/bin/cc  -v CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -o cmTC_704bf
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/clang/19/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/clang/19/include] ==> [/usr/lib/clang/19/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/clang/19/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_704bf/fast]
+        ignore line: [/usr/local/bin/gmake  -f CMakeFiles/cmTC_704bf.dir/build.make CMakeFiles/cmTC_704bf.dir/build]
+        ignore line: [gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F']
+        ignore line: [Building C object CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -MD -MT CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)]
+        ignore line: [Target: x86_64-unknown-freebsd14.3]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/bin/cc" -cc1 -triple x86_64-unknown-freebsd14.3 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F -v -fcoverage-compilation-dir=/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-6an74F -resource-dir /usr/lib/clang/19 -dependency-file CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/clang/19/include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 19.1.7 based upon LLVM 19.1.7 default target x86_64-unknown-freebsd14.3]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/clang/19/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_704bf]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_704bf.dir/link.txt --verbose=1]
+        ignore line: [FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)]
+        ignore line: [Target: x86_64-unknown-freebsd14.3]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        link line: [ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTC_704bf /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/libexec/ld-elf.so.1] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_704bf] ==> ignore
+          arg [/usr/lib/crt1.o] ==> obj [/usr/lib/crt1.o]
+          arg [/usr/lib/crti.o] ==> obj [/usr/lib/crti.o]
+          arg [/usr/lib/crtbegin.o] ==> obj [/usr/lib/crtbegin.o]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_704bf.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/crtend.o] ==> obj [/usr/lib/crtend.o]
+          arg [/usr/lib/crtn.o] ==> obj [/usr/lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/crt1.o;/usr/lib/crti.o;/usr/lib/crtbegin.o;/usr/lib/crtend.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      LLD 19.1.7 (FreeBSD llvmorg-19.1.7-0-gcd708029e0b2-1400007) (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2) (compatible with GNU linkers)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_c37df/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_c37df.dir/build.make CMakeFiles/cmTC_c37df.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD'
+        Building CXX object CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -MD -MT CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)
+        Target: x86_64-unknown-freebsd14.3
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/bin/c++" -cc1 -triple x86_64-unknown-freebsd14.3 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD -v -fcoverage-compilation-dir=/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD -resource-dir /usr/lib/clang/19 -dependency-file CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -internal-isystem /usr/lib/clang/19/include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 19.1.7 based upon LLVM 19.1.7 default target x86_64-unknown-freebsd14.3
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/v1
+         /usr/lib/clang/19/include
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_c37df
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c37df.dir/link.txt --verbose=1
+        FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)
+        Target: x86_64-unknown-freebsd14.3
+        Thread model: posix
+        InstalledDir: /usr/bin
+         "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTC_c37df /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o
+        /usr/bin/c++  -v CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c37df
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/v1]
+          add: [/usr/lib/clang/19/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/v1] ==> [/usr/include/c++/v1]
+        collapse include dir [/usr/lib/clang/19/include] ==> [/usr/lib/clang/19/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/v1;/usr/lib/clang/19/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_c37df/fast]
+        ignore line: [/usr/local/bin/gmake  -f CMakeFiles/cmTC_c37df.dir/build.make CMakeFiles/cmTC_c37df.dir/build]
+        ignore line: [gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -MD -MT CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)]
+        ignore line: [Target: x86_64-unknown-freebsd14.3]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/bin/c++" -cc1 -triple x86_64-unknown-freebsd14.3 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD -v -fcoverage-compilation-dir=/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Rcv5OD -resource-dir /usr/lib/clang/19 -dependency-file CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -internal-isystem /usr/lib/clang/19/include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 19.1.7 based upon LLVM 19.1.7 default target x86_64-unknown-freebsd14.3]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/v1]
+        ignore line: [ /usr/lib/clang/19/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_c37df]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c37df.dir/link.txt --verbose=1]
+        ignore line: [FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)]
+        ignore line: [Target: x86_64-unknown-freebsd14.3]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        link line: [ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTC_c37df /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/libexec/ld-elf.so.1] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c37df] ==> ignore
+          arg [/usr/lib/crt1.o] ==> obj [/usr/lib/crt1.o]
+          arg [/usr/lib/crti.o] ==> obj [/usr/lib/crti.o]
+          arg [/usr/lib/crtbegin.o] ==> obj [/usr/lib/crtbegin.o]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_c37df.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/crtend.o] ==> obj [/usr/lib/crtend.o]
+          arg [/usr/lib/crtn.o] ==> obj [/usr/lib/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [c++;m;gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/crt1.o;/usr/lib/crti.o;/usr/lib/crtbegin.o;/usr/lib/crtend.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      LLD 19.1.7 (FreeBSD llvmorg-19.1.7-0-gcd708029e0b2-1400007) (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2) (compatible with GNU linkers)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/local/share/cmake/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:89 (check_linker_flag)"
+    checks:
+      - "Performing Test HAVE_LD_Z"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-lOK8td"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-lOK8td"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_LD_Z"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-lOK8td'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_61477/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_61477.dir/build.make CMakeFiles/cmTC_61477.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-lOK8td'
+        Building C object CMakeFiles/cmTC_61477.dir/src.c.o
+        /usr/bin/cc -DHAVE_LD_Z   -MD -MT CMakeFiles/cmTC_61477.dir/src.c.o -MF CMakeFiles/cmTC_61477.dir/src.c.o.d -o CMakeFiles/cmTC_61477.dir/src.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-lOK8td/src.c
+        Linking C executable cmTC_61477
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61477.dir/link.txt --verbose=1
+        /usr/bin/cc -Xlinker -z -Xlinker now -Xlinker -z -Xlinker relro CMakeFiles/cmTC_61477.dir/src.c.o -o cmTC_61477
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-lOK8td'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:91 (check_include_files)"
+    checks:
+      - "Looking for include files sys/types.h, net/pfkeyv2.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wv4xs7"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wv4xs7"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_NET_PFKEY_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wv4xs7'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_4b1d3/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_4b1d3.dir/build.make CMakeFiles/cmTC_4b1d3.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wv4xs7'
+        Building C object CMakeFiles/cmTC_4b1d3.dir/HAVE_NET_PFKEY_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_4b1d3.dir/HAVE_NET_PFKEY_H.c.o -MF CMakeFiles/cmTC_4b1d3.dir/HAVE_NET_PFKEY_H.c.o.d -o CMakeFiles/cmTC_4b1d3.dir/HAVE_NET_PFKEY_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wv4xs7/HAVE_NET_PFKEY_H.c
+        Linking C executable cmTC_4b1d3
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b1d3.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_4b1d3.dir/HAVE_NET_PFKEY_H.c.o -o cmTC_4b1d3
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wv4xs7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:96 (check_include_files)"
+    checks:
+      - "Looking for include file linux/pfkeyv2.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-81qmCO"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-81qmCO"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_LINUX_PFKEY_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-81qmCO'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_6b177/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_6b177.dir/build.make CMakeFiles/cmTC_6b177.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-81qmCO'
+        Building C object CMakeFiles/cmTC_6b177.dir/HAVE_LINUX_PFKEY_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_6b177.dir/HAVE_LINUX_PFKEY_H.c.o -MF CMakeFiles/cmTC_6b177.dir/HAVE_LINUX_PFKEY_H.c.o.d -o CMakeFiles/cmTC_6b177.dir/HAVE_LINUX_PFKEY_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-81qmCO/HAVE_LINUX_PFKEY_H.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-81qmCO/HAVE_LINUX_PFKEY_H.c:2:10: fatal error: 'linux/pfkeyv2.h' file not found
+            2 | #include <linux/pfkeyv2.h>
+              |          ^~~~~~~~~~~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_6b177.dir/build.make:82: CMakeFiles/cmTC_6b177.dir/HAVE_LINUX_PFKEY_H.c.o] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-81qmCO'
+        gmake: *** [Makefile:134: cmTC_6b177/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:107 (check_include_files)"
+    checks:
+      - "Looking for include file unistd.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4VYs0p"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4VYs0p"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4VYs0p'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_c7aea/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_c7aea.dir/build.make CMakeFiles/cmTC_c7aea.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4VYs0p'
+        Building C object CMakeFiles/cmTC_c7aea.dir/HAVE_UNISTD_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_c7aea.dir/HAVE_UNISTD_H.c.o -MF CMakeFiles/cmTC_c7aea.dir/HAVE_UNISTD_H.c.o.d -o CMakeFiles/cmTC_c7aea.dir/HAVE_UNISTD_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4VYs0p/HAVE_UNISTD_H.c
+        Linking C executable cmTC_c7aea
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7aea.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c7aea.dir/HAVE_UNISTD_H.c.o -o cmTC_c7aea
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4VYs0p'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:112 (check_include_files)"
+    checks:
+      - "Looking for include file endian.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3kyIMX"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3kyIMX"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ENDIAN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3kyIMX'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_95524/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_95524.dir/build.make CMakeFiles/cmTC_95524.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3kyIMX'
+        Building C object CMakeFiles/cmTC_95524.dir/HAVE_ENDIAN_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_95524.dir/HAVE_ENDIAN_H.c.o -MF CMakeFiles/cmTC_95524.dir/HAVE_ENDIAN_H.c.o.d -o CMakeFiles/cmTC_95524.dir/HAVE_ENDIAN_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3kyIMX/HAVE_ENDIAN_H.c
+        Linking C executable cmTC_95524
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95524.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_95524.dir/HAVE_ENDIAN_H.c.o -o cmTC_95524
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3kyIMX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:117 (check_include_files)"
+    checks:
+      - "Looking for include file dirent.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PVTMBZ"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PVTMBZ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_DIRENT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PVTMBZ'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_49545/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_49545.dir/build.make CMakeFiles/cmTC_49545.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PVTMBZ'
+        Building C object CMakeFiles/cmTC_49545.dir/HAVE_DIRENT_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_49545.dir/HAVE_DIRENT_H.c.o -MF CMakeFiles/cmTC_49545.dir/HAVE_DIRENT_H.c.o.d -o CMakeFiles/cmTC_49545.dir/HAVE_DIRENT_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PVTMBZ/HAVE_DIRENT_H.c
+        Linking C executable cmTC_49545
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49545.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_49545.dir/HAVE_DIRENT_H.c.o -o cmTC_49545
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PVTMBZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:122 (check_include_files)"
+    checks:
+      - "Looking for include file grp.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-1rBCtp"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-1rBCtp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GRP_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-1rBCtp'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_63177/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_63177.dir/build.make CMakeFiles/cmTC_63177.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-1rBCtp'
+        Building C object CMakeFiles/cmTC_63177.dir/HAVE_GRP_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_63177.dir/HAVE_GRP_H.c.o -MF CMakeFiles/cmTC_63177.dir/HAVE_GRP_H.c.o.d -o CMakeFiles/cmTC_63177.dir/HAVE_GRP_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-1rBCtp/HAVE_GRP_H.c
+        Linking C executable cmTC_63177
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63177.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_63177.dir/HAVE_GRP_H.c.o -o cmTC_63177
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-1rBCtp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:127 (check_include_files)"
+    checks:
+      - "Looking for include files sys/socket.h, netinet/ip_ipsp.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-x2Kyb6"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-x2Kyb6"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_IPSP_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-x2Kyb6'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_51229/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_51229.dir/build.make CMakeFiles/cmTC_51229.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-x2Kyb6'
+        Building C object CMakeFiles/cmTC_51229.dir/HAVE_IPSP_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_51229.dir/HAVE_IPSP_H.c.o -MF CMakeFiles/cmTC_51229.dir/HAVE_IPSP_H.c.o.d -o CMakeFiles/cmTC_51229.dir/HAVE_IPSP_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-x2Kyb6/HAVE_IPSP_H.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-x2Kyb6/HAVE_IPSP_H.c:3:10: fatal error: 'netinet/ip_ipsp.h' file not found
+            3 | #include <netinet/ip_ipsp.h>
+              |          ^~~~~~~~~~~~~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_51229.dir/build.make:82: CMakeFiles/cmTC_51229.dir/HAVE_IPSP_H.c.o] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-x2Kyb6'
+        gmake: *** [Makefile:134: cmTC_51229/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:132 (check_include_files)"
+    checks:
+      - "Looking for include files sys/types.h, netipsec/ipsec.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-5BK90f"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-5BK90f"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_NET_IPSEC_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-5BK90f'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_3f2e9/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_3f2e9.dir/build.make CMakeFiles/cmTC_3f2e9.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-5BK90f'
+        Building C object CMakeFiles/cmTC_3f2e9.dir/HAVE_NET_IPSEC_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_3f2e9.dir/HAVE_NET_IPSEC_H.c.o -MF CMakeFiles/cmTC_3f2e9.dir/HAVE_NET_IPSEC_H.c.o.d -o CMakeFiles/cmTC_3f2e9.dir/HAVE_NET_IPSEC_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-5BK90f/HAVE_NET_IPSEC_H.c
+        Linking C executable cmTC_3f2e9
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f2e9.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_3f2e9.dir/HAVE_NET_IPSEC_H.c.o -o cmTC_3f2e9
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-5BK90f'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:137 (check_include_files)"
+    checks:
+      - "Looking for include files sys/types.h, netinet6/ipsec.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-inKNhX"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-inKNhX"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_NETINET6_IPSEC_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-inKNhX'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_d369c/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_d369c.dir/build.make CMakeFiles/cmTC_d369c.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-inKNhX'
+        Building C object CMakeFiles/cmTC_d369c.dir/HAVE_NETINET6_IPSEC_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_d369c.dir/HAVE_NETINET6_IPSEC_H.c.o -MF CMakeFiles/cmTC_d369c.dir/HAVE_NETINET6_IPSEC_H.c.o.d -o CMakeFiles/cmTC_d369c.dir/HAVE_NETINET6_IPSEC_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-inKNhX/HAVE_NETINET6_IPSEC_H.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-inKNhX/HAVE_NETINET6_IPSEC_H.c:3:10: fatal error: 'netinet6/ipsec.h' file not found
+            3 | #include <netinet6/ipsec.h>
+              |          ^~~~~~~~~~~~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_d369c.dir/build.make:82: CMakeFiles/cmTC_d369c.dir/HAVE_NETINET6_IPSEC_H.c.o] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-inKNhX'
+        gmake: *** [Makefile:134: cmTC_d369c/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:142 (check_include_files)"
+    checks:
+      - "Looking for include file linux/ipsec.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-9Mi279"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-9Mi279"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_LINUX_IPSEC_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-9Mi279'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_7fbbb/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_7fbbb.dir/build.make CMakeFiles/cmTC_7fbbb.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-9Mi279'
+        Building C object CMakeFiles/cmTC_7fbbb.dir/HAVE_LINUX_IPSEC_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_7fbbb.dir/HAVE_LINUX_IPSEC_H.c.o -MF CMakeFiles/cmTC_7fbbb.dir/HAVE_LINUX_IPSEC_H.c.o.d -o CMakeFiles/cmTC_7fbbb.dir/HAVE_LINUX_IPSEC_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-9Mi279/HAVE_LINUX_IPSEC_H.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-9Mi279/HAVE_LINUX_IPSEC_H.c:2:10: fatal error: 'linux/ipsec.h' file not found
+            2 | #include <linux/ipsec.h>
+              |          ^~~~~~~~~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_7fbbb.dir/build.make:82: CMakeFiles/cmTC_7fbbb.dir/HAVE_LINUX_IPSEC_H.c.o] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-9Mi279'
+        gmake: *** [Makefile:134: cmTC_7fbbb/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:147 (check_include_files)"
+    checks:
+      - "Looking for 3 include files sys/types.h, ..., imsg.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o48WaB"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o48WaB"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_IMSG_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o48WaB'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_f234d/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_f234d.dir/build.make CMakeFiles/cmTC_f234d.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o48WaB'
+        Building C object CMakeFiles/cmTC_f234d.dir/HAVE_IMSG_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_f234d.dir/HAVE_IMSG_H.c.o -MF CMakeFiles/cmTC_f234d.dir/HAVE_IMSG_H.c.o.d -o CMakeFiles/cmTC_f234d.dir/HAVE_IMSG_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o48WaB/HAVE_IMSG_H.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o48WaB/HAVE_IMSG_H.c:4:10: fatal error: 'imsg.h' file not found
+            4 | #include <imsg.h>
+              |          ^~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_f234d.dir/build.make:82: CMakeFiles/cmTC_f234d.dir/HAVE_IMSG_H.c.o] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o48WaB'
+        gmake: *** [Makefile:134: cmTC_f234d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:152 (check_function_exists)"
+    checks:
+      - "Looking for recallocarray"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4MoLL2"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4MoLL2"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_RECALLOCARRAY"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4MoLL2'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_3ae54/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_3ae54.dir/build.make CMakeFiles/cmTC_3ae54.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4MoLL2'
+        Building C object CMakeFiles/cmTC_3ae54.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=recallocarray -MD -MT CMakeFiles/cmTC_3ae54.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_3ae54.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_3ae54.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4MoLL2/CheckFunctionExists.c
+        Linking C executable cmTC_3ae54
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ae54.dir/link.txt --verbose=1
+        ld: error: undefined symbol: recallocarray
+        >>> referenced by CheckFunctionExists.c
+        >>>               CMakeFiles/cmTC_3ae54.dir/CheckFunctionExists.c.o:(main)
+        >>> did you mean: reallocarray
+        >>> defined in: /lib/libc.so.7
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=recallocarray CMakeFiles/cmTC_3ae54.dir/CheckFunctionExists.c.o -o cmTC_3ae54
+        gmake[1]: *** [CMakeFiles/cmTC_3ae54.dir/build.make:103: cmTC_3ae54] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4MoLL2'
+        gmake: *** [Makefile:134: cmTC_3ae54/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:157 (check_function_exists)"
+    checks:
+      - "Looking for reallocarray"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-OJ5mOd"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-OJ5mOd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_REALLOCARRAY"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-OJ5mOd'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_b2b75/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_b2b75.dir/build.make CMakeFiles/cmTC_b2b75.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-OJ5mOd'
+        Building C object CMakeFiles/cmTC_b2b75.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=reallocarray -MD -MT CMakeFiles/cmTC_b2b75.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_b2b75.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_b2b75.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-OJ5mOd/CheckFunctionExists.c
+        Linking C executable cmTC_b2b75
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2b75.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=reallocarray CMakeFiles/cmTC_b2b75.dir/CheckFunctionExists.c.o -o cmTC_b2b75
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-OJ5mOd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:162 (check_function_exists)"
+    checks:
+      - "Looking for accept4"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-iNGIXm"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-iNGIXm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ACCEPT4"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-iNGIXm'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_4d07d/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_4d07d.dir/build.make CMakeFiles/cmTC_4d07d.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-iNGIXm'
+        Building C object CMakeFiles/cmTC_4d07d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=accept4 -MD -MT CMakeFiles/cmTC_4d07d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4d07d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4d07d.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-iNGIXm/CheckFunctionExists.c
+        Linking C executable cmTC_4d07d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d07d.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=accept4 CMakeFiles/cmTC_4d07d.dir/CheckFunctionExists.c.o -o cmTC_4d07d
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-iNGIXm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:167 (check_symbol_exists)"
+    checks:
+      - "Looking for SOCK_NONBLOCK"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-DjmeCd"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-DjmeCd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SOCK_NONBLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-DjmeCd'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_3c22b/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_3c22b.dir/build.make CMakeFiles/cmTC_3c22b.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-DjmeCd'
+        Building C object CMakeFiles/cmTC_3c22b.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_3c22b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_3c22b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_3c22b.dir/CheckSymbolExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-DjmeCd/CheckSymbolExists.c
+        Linking C executable cmTC_3c22b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c22b.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_3c22b.dir/CheckSymbolExists.c.o -o cmTC_3c22b
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-DjmeCd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:172 (check_function_exists)"
+    checks:
+      - "Looking for setproctitle"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-K8hCu0"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-K8hCu0"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SETPROCTITLE"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-K8hCu0'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_4962a/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_4962a.dir/build.make CMakeFiles/cmTC_4962a.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-K8hCu0'
+        Building C object CMakeFiles/cmTC_4962a.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setproctitle -MD -MT CMakeFiles/cmTC_4962a.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4962a.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4962a.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-K8hCu0/CheckFunctionExists.c
+        Linking C executable cmTC_4962a
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4962a.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setproctitle CMakeFiles/cmTC_4962a.dir/CheckFunctionExists.c.o -o cmTC_4962a
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-K8hCu0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:177 (check_function_exists)"
+    checks:
+      - "Looking for pledge"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-CoLC1t"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-CoLC1t"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_PLEDGE"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-CoLC1t'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_5171b/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_5171b.dir/build.make CMakeFiles/cmTC_5171b.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-CoLC1t'
+        Building C object CMakeFiles/cmTC_5171b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pledge -MD -MT CMakeFiles/cmTC_5171b.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_5171b.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_5171b.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-CoLC1t/CheckFunctionExists.c
+        Linking C executable cmTC_5171b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5171b.dir/link.txt --verbose=1
+        ld: error: undefined symbol: pledge
+        >>> referenced by CheckFunctionExists.c
+        >>>               CMakeFiles/cmTC_5171b.dir/CheckFunctionExists.c.o:(main)
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pledge CMakeFiles/cmTC_5171b.dir/CheckFunctionExists.c.o -o cmTC_5171b
+        gmake[1]: *** [CMakeFiles/cmTC_5171b.dir/build.make:103: cmTC_5171b] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-CoLC1t'
+        gmake: *** [Makefile:134: cmTC_5171b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:182 (check_function_exists)"
+    checks:
+      - "Looking for setresgid"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-HnwcrH"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-HnwcrH"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SETRESGID"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-HnwcrH'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_71042/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_71042.dir/build.make CMakeFiles/cmTC_71042.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-HnwcrH'
+        Building C object CMakeFiles/cmTC_71042.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setresgid -MD -MT CMakeFiles/cmTC_71042.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_71042.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_71042.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-HnwcrH/CheckFunctionExists.c
+        Linking C executable cmTC_71042
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71042.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setresgid CMakeFiles/cmTC_71042.dir/CheckFunctionExists.c.o -o cmTC_71042
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-HnwcrH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:187 (check_function_exists)"
+    checks:
+      - "Looking for setresuid"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xgXm0r"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xgXm0r"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SETRESUID"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xgXm0r'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_3ba20/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_3ba20.dir/build.make CMakeFiles/cmTC_3ba20.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xgXm0r'
+        Building C object CMakeFiles/cmTC_3ba20.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setresuid -MD -MT CMakeFiles/cmTC_3ba20.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_3ba20.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_3ba20.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xgXm0r/CheckFunctionExists.c
+        Linking C executable cmTC_3ba20
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ba20.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setresuid CMakeFiles/cmTC_3ba20.dir/CheckFunctionExists.c.o -o cmTC_3ba20
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xgXm0r'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:192 (check_function_exists)"
+    checks:
+      - "Looking for setregid"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PGIKVI"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PGIKVI"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SETREGID"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PGIKVI'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_8244f/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_8244f.dir/build.make CMakeFiles/cmTC_8244f.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PGIKVI'
+        Building C object CMakeFiles/cmTC_8244f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setregid -MD -MT CMakeFiles/cmTC_8244f.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8244f.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8244f.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PGIKVI/CheckFunctionExists.c
+        Linking C executable cmTC_8244f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8244f.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setregid CMakeFiles/cmTC_8244f.dir/CheckFunctionExists.c.o -o cmTC_8244f
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-PGIKVI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:197 (check_function_exists)"
+    checks:
+      - "Looking for setreuid"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RiSiSn"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RiSiSn"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SETREUID"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RiSiSn'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_f710e/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_f710e.dir/build.make CMakeFiles/cmTC_f710e.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RiSiSn'
+        Building C object CMakeFiles/cmTC_f710e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setreuid -MD -MT CMakeFiles/cmTC_f710e.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_f710e.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_f710e.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RiSiSn/CheckFunctionExists.c
+        Linking C executable cmTC_f710e
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f710e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setreuid CMakeFiles/cmTC_f710e.dir/CheckFunctionExists.c.o -o cmTC_f710e
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RiSiSn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:202 (check_function_exists)"
+    checks:
+      - "Looking for getrtable"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-01WsHw"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-01WsHw"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETRTABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-01WsHw'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_c593e/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_c593e.dir/build.make CMakeFiles/cmTC_c593e.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-01WsHw'
+        Building C object CMakeFiles/cmTC_c593e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getrtable -MD -MT CMakeFiles/cmTC_c593e.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c593e.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c593e.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-01WsHw/CheckFunctionExists.c
+        Linking C executable cmTC_c593e
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c593e.dir/link.txt --verbose=1
+        ld: error: undefined symbol: getrtable
+        >>> referenced by CheckFunctionExists.c
+        >>>               CMakeFiles/cmTC_c593e.dir/CheckFunctionExists.c.o:(main)
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getrtable CMakeFiles/cmTC_c593e.dir/CheckFunctionExists.c.o -o cmTC_c593e
+        gmake[1]: *** [CMakeFiles/cmTC_c593e.dir/build.make:103: cmTC_c593e] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-01WsHw'
+        gmake: *** [Makefile:134: cmTC_c593e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:208 (check_function_exists)"
+    checks:
+      - "Looking for setrtable"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-V9LAVz"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-V9LAVz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SETRTABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-V9LAVz'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_7b3a8/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_7b3a8.dir/build.make CMakeFiles/cmTC_7b3a8.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-V9LAVz'
+        Building C object CMakeFiles/cmTC_7b3a8.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setrtable -MD -MT CMakeFiles/cmTC_7b3a8.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_7b3a8.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_7b3a8.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-V9LAVz/CheckFunctionExists.c
+        Linking C executable cmTC_7b3a8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b3a8.dir/link.txt --verbose=1
+        ld: error: undefined symbol: setrtable
+        >>> referenced by CheckFunctionExists.c
+        >>>               CMakeFiles/cmTC_7b3a8.dir/CheckFunctionExists.c.o:(main)
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setrtable CMakeFiles/cmTC_7b3a8.dir/CheckFunctionExists.c.o -o cmTC_7b3a8
+        gmake[1]: *** [CMakeFiles/cmTC_7b3a8.dir/build.make:103: cmTC_7b3a8] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-V9LAVz'
+        gmake: *** [Makefile:134: cmTC_7b3a8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:213 (check_function_exists)"
+    checks:
+      - "Looking for strtonum"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xdml3u"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xdml3u"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRTONUM"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xdml3u'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_6f5e6/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_6f5e6.dir/build.make CMakeFiles/cmTC_6f5e6.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xdml3u'
+        Building C object CMakeFiles/cmTC_6f5e6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtonum -MD -MT CMakeFiles/cmTC_6f5e6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_6f5e6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_6f5e6.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xdml3u/CheckFunctionExists.c
+        Linking C executable cmTC_6f5e6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f5e6.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strtonum CMakeFiles/cmTC_6f5e6.dir/CheckFunctionExists.c.o -o cmTC_6f5e6
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-xdml3u'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:218 (check_symbol_exists)"
+    checks:
+      - "Looking for ifgroupreq"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ZdTzhU"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ZdTzhU"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_IFGROUPREQ"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ZdTzhU'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_992c6/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_992c6.dir/build.make CMakeFiles/cmTC_992c6.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ZdTzhU'
+        Building C object CMakeFiles/cmTC_992c6.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_992c6.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_992c6.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_992c6.dir/CheckSymbolExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ZdTzhU/CheckSymbolExists.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ZdTzhU/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'ifgroupreq'
+            8 |   return ((int*)(&ifgroupreq))[argc];
+              |                   ^
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_992c6.dir/build.make:82: CMakeFiles/cmTC_992c6.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ZdTzhU'
+        gmake: *** [Makefile:134: cmTC_992c6/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:223 (check_function_exists)"
+    checks:
+      - "Looking for freezero"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4IXbsj"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4IXbsj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FREEZERO"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4IXbsj'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_a9ee9/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_a9ee9.dir/build.make CMakeFiles/cmTC_a9ee9.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4IXbsj'
+        Building C object CMakeFiles/cmTC_a9ee9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=freezero -MD -MT CMakeFiles/cmTC_a9ee9.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_a9ee9.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_a9ee9.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4IXbsj/CheckFunctionExists.c
+        Linking C executable cmTC_a9ee9
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9ee9.dir/link.txt --verbose=1
+        ld: error: undefined symbol: freezero
+        >>> referenced by CheckFunctionExists.c
+        >>>               CMakeFiles/cmTC_a9ee9.dir/CheckFunctionExists.c.o:(main)
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=freezero CMakeFiles/cmTC_a9ee9.dir/CheckFunctionExists.c.o -o cmTC_a9ee9
+        gmake[1]: *** [CMakeFiles/cmTC_a9ee9.dir/build.make:103: cmTC_a9ee9] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-4IXbsj'
+        gmake: *** [Makefile:134: cmTC_a9ee9/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:228 (check_function_exists)"
+    checks:
+      - "Looking for getdtablecount"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-dq6a4I"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-dq6a4I"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETDTABLECOUNT"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-dq6a4I'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_3dd95/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_3dd95.dir/build.make CMakeFiles/cmTC_3dd95.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-dq6a4I'
+        Building C object CMakeFiles/cmTC_3dd95.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getdtablecount -MD -MT CMakeFiles/cmTC_3dd95.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_3dd95.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_3dd95.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-dq6a4I/CheckFunctionExists.c
+        Linking C executable cmTC_3dd95
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3dd95.dir/link.txt --verbose=1
+        ld: error: undefined symbol: getdtablecount
+        >>> referenced by CheckFunctionExists.c
+        >>>               CMakeFiles/cmTC_3dd95.dir/CheckFunctionExists.c.o:(main)
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getdtablecount CMakeFiles/cmTC_3dd95.dir/CheckFunctionExists.c.o -o cmTC_3dd95
+        gmake[1]: *** [CMakeFiles/cmTC_3dd95.dir/build.make:103: cmTC_3dd95] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-dq6a4I'
+        gmake: *** [Makefile:134: cmTC_3dd95/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:233 (check_symbol_exists)"
+    checks:
+      - "Looking for timespecsub"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-oR8HVA"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-oR8HVA"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_TIMESPECSUB"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-oR8HVA'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_b32ff/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_b32ff.dir/build.make CMakeFiles/cmTC_b32ff.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-oR8HVA'
+        Building C object CMakeFiles/cmTC_b32ff.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_b32ff.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_b32ff.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_b32ff.dir/CheckSymbolExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-oR8HVA/CheckSymbolExists.c
+        Linking C executable cmTC_b32ff
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b32ff.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_b32ff.dir/CheckSymbolExists.c.o -o cmTC_b32ff
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-oR8HVA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:238 (check_function_exists)"
+    checks:
+      - "Looking for asprintf"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-qRSJsB"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-qRSJsB"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ASPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-qRSJsB'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_a52be/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_a52be.dir/build.make CMakeFiles/cmTC_a52be.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-qRSJsB'
+        Building C object CMakeFiles/cmTC_a52be.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=asprintf -MD -MT CMakeFiles/cmTC_a52be.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_a52be.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_a52be.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-qRSJsB/CheckFunctionExists.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-qRSJsB/CheckFunctionExists.c:17:25: warning: format string missing [-Wformat]
+           17 |   CHECK_FUNCTION_EXISTS();
+              |   ~~~~~~~~~~~~~~~~~~~~~ ^
+        1 warning generated.
+        Linking C executable cmTC_a52be
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a52be.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=asprintf CMakeFiles/cmTC_a52be.dir/CheckFunctionExists.c.o -o cmTC_a52be
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-qRSJsB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:243 (check_function_exists)"
+    checks:
+      - "Looking for strcasecmp"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-yA0Bz2"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-yA0Bz2"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRCASECMP"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-yA0Bz2'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_7ad48/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_7ad48.dir/build.make CMakeFiles/cmTC_7ad48.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-yA0Bz2'
+        Building C object CMakeFiles/cmTC_7ad48.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strcasecmp -MD -MT CMakeFiles/cmTC_7ad48.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_7ad48.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_7ad48.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-yA0Bz2/CheckFunctionExists.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-yA0Bz2/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strcasecmp' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strcasecmp
+              |                               ^
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-yA0Bz2/CheckFunctionExists.c:7:3: note: 'strcasecmp' is a builtin with type 'int (const char *, const char *)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strcasecmp
+              |                               ^
+        1 warning generated.
+        Linking C executable cmTC_7ad48
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ad48.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strcasecmp CMakeFiles/cmTC_7ad48.dir/CheckFunctionExists.c.o -o cmTC_7ad48
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-yA0Bz2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:248 (check_function_exists)"
+    checks:
+      - "Looking for strlcat"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-JgTNmt"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-JgTNmt"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRLCAT"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-JgTNmt'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_ae8c9/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_ae8c9.dir/build.make CMakeFiles/cmTC_ae8c9.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-JgTNmt'
+        Building C object CMakeFiles/cmTC_ae8c9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strlcat -MD -MT CMakeFiles/cmTC_ae8c9.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ae8c9.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ae8c9.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-JgTNmt/CheckFunctionExists.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-JgTNmt/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcat' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strlcat
+              |                               ^
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-JgTNmt/CheckFunctionExists.c:7:3: note: 'strlcat' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strlcat
+              |                               ^
+        1 warning generated.
+        Linking C executable cmTC_ae8c9
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae8c9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strlcat CMakeFiles/cmTC_ae8c9.dir/CheckFunctionExists.c.o -o cmTC_ae8c9
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-JgTNmt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:253 (check_function_exists)"
+    checks:
+      - "Looking for strlcpy"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cGZleP"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cGZleP"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRLCPY"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cGZleP'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_4f0cc/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_4f0cc.dir/build.make CMakeFiles/cmTC_4f0cc.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cGZleP'
+        Building C object CMakeFiles/cmTC_4f0cc.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strlcpy -MD -MT CMakeFiles/cmTC_4f0cc.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4f0cc.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4f0cc.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cGZleP/CheckFunctionExists.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cGZleP/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcpy' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strlcpy
+              |                               ^
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cGZleP/CheckFunctionExists.c:7:3: note: 'strlcpy' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strlcpy
+              |                               ^
+        1 warning generated.
+        Linking C executable cmTC_4f0cc
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f0cc.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strlcpy CMakeFiles/cmTC_4f0cc.dir/CheckFunctionExists.c.o -o cmTC_4f0cc
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cGZleP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:258 (check_function_exists)"
+    checks:
+      - "Looking for strndup"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Yv5YXy"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Yv5YXy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRNDUP"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Yv5YXy'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_44ba2/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_44ba2.dir/build.make CMakeFiles/cmTC_44ba2.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Yv5YXy'
+        Building C object CMakeFiles/cmTC_44ba2.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strndup -MD -MT CMakeFiles/cmTC_44ba2.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_44ba2.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_44ba2.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Yv5YXy/CheckFunctionExists.c
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Yv5YXy/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strndup' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strndup
+              |                               ^
+        /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Yv5YXy/CheckFunctionExists.c:7:3: note: 'strndup' is a builtin with type 'char *(const char *, unsigned long)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strndup
+              |                               ^
+        1 warning generated.
+        Linking C executable cmTC_44ba2
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44ba2.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strndup CMakeFiles/cmTC_44ba2.dir/CheckFunctionExists.c.o -o cmTC_44ba2
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Yv5YXy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:263 (check_function_exists)"
+    checks:
+      - "Looking for ffs"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o6BgaM"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o6BgaM"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FFS"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o6BgaM'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_7927e/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_7927e.dir/build.make CMakeFiles/cmTC_7927e.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o6BgaM'
+        Building C object CMakeFiles/cmTC_7927e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=ffs -MD -MT CMakeFiles/cmTC_7927e.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_7927e.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_7927e.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o6BgaM/CheckFunctionExists.c
+        Linking C executable cmTC_7927e
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7927e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=ffs CMakeFiles/cmTC_7927e.dir/CheckFunctionExists.c.o -o cmTC_7927e
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-o6BgaM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:268 (check_function_exists)"
+    checks:
+      - "Looking for strnlen"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-QsNIuX"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-QsNIuX"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRNLEN"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-QsNIuX'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_305a9/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_305a9.dir/build.make CMakeFiles/cmTC_305a9.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-QsNIuX'
+        Building C object CMakeFiles/cmTC_305a9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strnlen -MD -MT CMakeFiles/cmTC_305a9.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_305a9.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_305a9.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-QsNIuX/CheckFunctionExists.c
+        Linking C executable cmTC_305a9
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_305a9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strnlen CMakeFiles/cmTC_305a9.dir/CheckFunctionExists.c.o -o cmTC_305a9
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-QsNIuX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:273 (check_function_exists)"
+    checks:
+      - "Looking for strsep"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ec4aOq"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ec4aOq"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRSEP"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ec4aOq'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_8b6f7/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_8b6f7.dir/build.make CMakeFiles/cmTC_8b6f7.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ec4aOq'
+        Building C object CMakeFiles/cmTC_8b6f7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strsep -MD -MT CMakeFiles/cmTC_8b6f7.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8b6f7.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8b6f7.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ec4aOq/CheckFunctionExists.c
+        Linking C executable cmTC_8b6f7
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b6f7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strsep CMakeFiles/cmTC_8b6f7.dir/CheckFunctionExists.c.o -o cmTC_8b6f7
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-ec4aOq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:278 (check_function_exists)"
+    checks:
+      - "Looking for timegm"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-k3ChNU"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-k3ChNU"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_TIMEGM"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-k3ChNU'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_c106d/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_c106d.dir/build.make CMakeFiles/cmTC_c106d.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-k3ChNU'
+        Building C object CMakeFiles/cmTC_c106d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=timegm -MD -MT CMakeFiles/cmTC_c106d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c106d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c106d.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-k3ChNU/CheckFunctionExists.c
+        Linking C executable cmTC_c106d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c106d.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=timegm CMakeFiles/cmTC_c106d.dir/CheckFunctionExists.c.o -o cmTC_c106d
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-k3ChNU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:283 (check_function_exists)"
+    checks:
+      - "Looking for arc4random_buf"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-7AUZ39"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-7AUZ39"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ARC4RANDOM_BUF"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-7AUZ39'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_a3e59/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_a3e59.dir/build.make CMakeFiles/cmTC_a3e59.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-7AUZ39'
+        Building C object CMakeFiles/cmTC_a3e59.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=arc4random_buf -MD -MT CMakeFiles/cmTC_a3e59.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_a3e59.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_a3e59.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-7AUZ39/CheckFunctionExists.c
+        Linking C executable cmTC_a3e59
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3e59.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=arc4random_buf CMakeFiles/cmTC_a3e59.dir/CheckFunctionExists.c.o -o cmTC_a3e59
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-7AUZ39'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:288 (check_function_exists)"
+    checks:
+      - "Looking for arc4random_uniform"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WmIlVc"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WmIlVc"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ARC4RANDOM_UNIFORM"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WmIlVc'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_12188/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_12188.dir/build.make CMakeFiles/cmTC_12188.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WmIlVc'
+        Building C object CMakeFiles/cmTC_12188.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=arc4random_uniform -MD -MT CMakeFiles/cmTC_12188.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_12188.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_12188.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WmIlVc/CheckFunctionExists.c
+        Linking C executable cmTC_12188
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12188.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=arc4random_uniform CMakeFiles/cmTC_12188.dir/CheckFunctionExists.c.o -o cmTC_12188
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WmIlVc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:293 (check_function_exists)"
+    checks:
+      - "Looking for explicit_bzero"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-8nLhgQ"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-8nLhgQ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_EXPLICIT_BZERO"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-8nLhgQ'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_594d8/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_594d8.dir/build.make CMakeFiles/cmTC_594d8.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-8nLhgQ'
+        Building C object CMakeFiles/cmTC_594d8.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=explicit_bzero -MD -MT CMakeFiles/cmTC_594d8.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_594d8.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_594d8.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-8nLhgQ/CheckFunctionExists.c
+        Linking C executable cmTC_594d8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_594d8.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=explicit_bzero CMakeFiles/cmTC_594d8.dir/CheckFunctionExists.c.o -o cmTC_594d8
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-8nLhgQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:298 (check_function_exists)"
+    checks:
+      - "Looking for getauxval"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-FMFtsV"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-FMFtsV"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETAUXVAL"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-FMFtsV'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_fb444/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_fb444.dir/build.make CMakeFiles/cmTC_fb444.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-FMFtsV'
+        Building C object CMakeFiles/cmTC_fb444.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getauxval -MD -MT CMakeFiles/cmTC_fb444.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_fb444.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_fb444.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-FMFtsV/CheckFunctionExists.c
+        Linking C executable cmTC_fb444
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb444.dir/link.txt --verbose=1
+        ld: error: undefined symbol: getauxval
+        >>> referenced by CheckFunctionExists.c
+        >>>               CMakeFiles/cmTC_fb444.dir/CheckFunctionExists.c.o:(main)
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getauxval CMakeFiles/cmTC_fb444.dir/CheckFunctionExists.c.o -o cmTC_fb444
+        gmake[1]: *** [CMakeFiles/cmTC_fb444.dir/build.make:103: cmTC_fb444] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-FMFtsV'
+        gmake: *** [Makefile:134: cmTC_fb444/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:303 (check_function_exists)"
+    checks:
+      - "Looking for getentropy"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-vWbZZn"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-vWbZZn"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETENTROPY"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-vWbZZn'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_2a24c/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_2a24c.dir/build.make CMakeFiles/cmTC_2a24c.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-vWbZZn'
+        Building C object CMakeFiles/cmTC_2a24c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getentropy -MD -MT CMakeFiles/cmTC_2a24c.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_2a24c.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_2a24c.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-vWbZZn/CheckFunctionExists.c
+        Linking C executable cmTC_2a24c
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a24c.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getentropy CMakeFiles/cmTC_2a24c.dir/CheckFunctionExists.c.o -o cmTC_2a24c
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-vWbZZn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:308 (check_symbol_exists)"
+    checks:
+      - "Looking for getpagesize"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Il8UNJ"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Il8UNJ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETPAGESIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Il8UNJ'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_e2207/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_e2207.dir/build.make CMakeFiles/cmTC_e2207.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Il8UNJ'
+        Building C object CMakeFiles/cmTC_e2207.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_e2207.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_e2207.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_e2207.dir/CheckSymbolExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Il8UNJ/CheckSymbolExists.c
+        Linking C executable cmTC_e2207
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2207.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e2207.dir/CheckSymbolExists.c.o -o cmTC_e2207
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-Il8UNJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:313 (check_function_exists)"
+    checks:
+      - "Looking for getprogname"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WY2LHr"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WY2LHr"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETPROGNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WY2LHr'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_329c9/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_329c9.dir/build.make CMakeFiles/cmTC_329c9.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WY2LHr'
+        Building C object CMakeFiles/cmTC_329c9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getprogname -MD -MT CMakeFiles/cmTC_329c9.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_329c9.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_329c9.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WY2LHr/CheckFunctionExists.c
+        Linking C executable cmTC_329c9
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_329c9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getprogname CMakeFiles/cmTC_329c9.dir/CheckFunctionExists.c.o -o cmTC_329c9
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WY2LHr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:318 (check_function_exists)"
+    checks:
+      - "Looking for syslog_r"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cJ55lQ"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cJ55lQ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYSLOG_R"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cJ55lQ'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_e6743/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_e6743.dir/build.make CMakeFiles/cmTC_e6743.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cJ55lQ'
+        Building C object CMakeFiles/cmTC_e6743.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=syslog_r -MD -MT CMakeFiles/cmTC_e6743.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_e6743.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_e6743.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cJ55lQ/CheckFunctionExists.c
+        Linking C executable cmTC_e6743
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6743.dir/link.txt --verbose=1
+        ld: error: undefined symbol: syslog_r
+        >>> referenced by CheckFunctionExists.c
+        >>>               CMakeFiles/cmTC_e6743.dir/CheckFunctionExists.c.o:(main)
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=syslog_r CMakeFiles/cmTC_e6743.dir/CheckFunctionExists.c.o -o cmTC_e6743
+        gmake[1]: *** [CMakeFiles/cmTC_e6743.dir/build.make:103: cmTC_e6743] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-cJ55lQ'
+        gmake: *** [Makefile:134: cmTC_e6743/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:323 (check_function_exists)"
+    checks:
+      - "Looking for syslog"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XZDbRs"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XZDbRs"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYSLOG"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XZDbRs'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_99928/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_99928.dir/build.make CMakeFiles/cmTC_99928.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XZDbRs'
+        Building C object CMakeFiles/cmTC_99928.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=syslog -MD -MT CMakeFiles/cmTC_99928.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_99928.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_99928.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XZDbRs/CheckFunctionExists.c
+        Linking C executable cmTC_99928
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99928.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=syslog CMakeFiles/cmTC_99928.dir/CheckFunctionExists.c.o -o cmTC_99928
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XZDbRs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:328 (check_function_exists)"
+    checks:
+      - "Looking for vis"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3D4iOM"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3D4iOM"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_VIS"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3D4iOM'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_0b868/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_0b868.dir/build.make CMakeFiles/cmTC_0b868.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3D4iOM'
+        Building C object CMakeFiles/cmTC_0b868.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vis -MD -MT CMakeFiles/cmTC_0b868.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_0b868.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_0b868.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3D4iOM/CheckFunctionExists.c
+        Linking C executable cmTC_0b868
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b868.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=vis CMakeFiles/cmTC_0b868.dir/CheckFunctionExists.c.o -o cmTC_0b868
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-3D4iOM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:338 (check_function_exists)"
+    checks:
+      - "Looking for timingsafe_bcmp"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-L3WTUT"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-L3WTUT"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_TIMINGSAFE_BCMP"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-L3WTUT'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_2aec6/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_2aec6.dir/build.make CMakeFiles/cmTC_2aec6.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-L3WTUT'
+        Building C object CMakeFiles/cmTC_2aec6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=timingsafe_bcmp -MD -MT CMakeFiles/cmTC_2aec6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_2aec6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_2aec6.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-L3WTUT/CheckFunctionExists.c
+        Linking C executable cmTC_2aec6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2aec6.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=timingsafe_bcmp CMakeFiles/cmTC_2aec6.dir/CheckFunctionExists.c.o -o cmTC_2aec6
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-L3WTUT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:343 (check_function_exists)"
+    checks:
+      - "Looking for timingsafe_memcmp"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-157ftP"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-157ftP"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_TIMINGSAFE_MEMCMP"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-157ftP'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_77393/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_77393.dir/build.make CMakeFiles/cmTC_77393.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-157ftP'
+        Building C object CMakeFiles/cmTC_77393.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=timingsafe_memcmp -MD -MT CMakeFiles/cmTC_77393.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_77393.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_77393.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-157ftP/CheckFunctionExists.c
+        Linking C executable cmTC_77393
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77393.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=timingsafe_memcmp CMakeFiles/cmTC_77393.dir/CheckFunctionExists.c.o -o cmTC_77393
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-157ftP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:348 (check_function_exists)"
+    checks:
+      - "Looking for memmem"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-jiajAd"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-jiajAd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_MEMMEM"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-jiajAd'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_3a5c1/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_3a5c1.dir/build.make CMakeFiles/cmTC_3a5c1.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-jiajAd'
+        Building C object CMakeFiles/cmTC_3a5c1.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memmem -MD -MT CMakeFiles/cmTC_3a5c1.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_3a5c1.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_3a5c1.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-jiajAd/CheckFunctionExists.c
+        Linking C executable cmTC_3a5c1
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a5c1.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memmem CMakeFiles/cmTC_3a5c1.dir/CheckFunctionExists.c.o -o cmTC_3a5c1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-jiajAd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:353 (check_include_files)"
+    checks:
+      - "Looking for include file err.h"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RMPGM5"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RMPGM5"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ERR_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RMPGM5'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_976ad/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_976ad.dir/build.make CMakeFiles/cmTC_976ad.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RMPGM5'
+        Building C object CMakeFiles/cmTC_976ad.dir/HAVE_ERR_H.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_976ad.dir/HAVE_ERR_H.c.o -MF CMakeFiles/cmTC_976ad.dir/HAVE_ERR_H.c.o.d -o CMakeFiles/cmTC_976ad.dir/HAVE_ERR_H.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RMPGM5/HAVE_ERR_H.c
+        Linking C executable cmTC_976ad
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_976ad.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_976ad.dir/HAVE_ERR_H.c.o -o cmTC_976ad
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-RMPGM5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:358 (check_function_exists)"
+    checks:
+      - "Looking for usleep"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XU4cND"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XU4cND"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_USLEEP"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XU4cND'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_8b38a/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_8b38a.dir/build.make CMakeFiles/cmTC_8b38a.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XU4cND'
+        Building C object CMakeFiles/cmTC_8b38a.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=usleep -MD -MT CMakeFiles/cmTC_8b38a.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8b38a.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8b38a.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XU4cND/CheckFunctionExists.c
+        Linking C executable cmTC_8b38a
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b38a.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=usleep CMakeFiles/cmTC_8b38a.dir/CheckFunctionExists.c.o -o cmTC_8b38a
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-XU4cND'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:363 (check_function_exists)"
+    checks:
+      - "Looking for getopt"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WDr2SN"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WDr2SN"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETOPT"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WDr2SN'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_2182b/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_2182b.dir/build.make CMakeFiles/cmTC_2182b.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WDr2SN'
+        Building C object CMakeFiles/cmTC_2182b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getopt -MD -MT CMakeFiles/cmTC_2182b.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_2182b.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_2182b.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WDr2SN/CheckFunctionExists.c
+        Linking C executable cmTC_2182b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2182b.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getopt CMakeFiles/cmTC_2182b.dir/CheckFunctionExists.c.o -o cmTC_2182b
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-WDr2SN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:368 (check_function_exists)"
+    checks:
+      - "Looking for msgbuf_new_reader"
+    directories:
+      source: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wSHpxc"
+      binary: "/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wSHpxc"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_MSGBUF_NEW_READER"
+      cached: true
+      stdout: |
+        Change Dir: '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wSHpxc'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_e9d9d/fast
+        /usr/local/bin/gmake  -f CMakeFiles/cmTC_e9d9d.dir/build.make CMakeFiles/cmTC_e9d9d.dir/build
+        gmake[1]: Entering directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wSHpxc'
+        Building C object CMakeFiles/cmTC_e9d9d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=msgbuf_new_reader -MD -MT CMakeFiles/cmTC_e9d9d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_e9d9d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_e9d9d.dir/CheckFunctionExists.c.o -c /root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wSHpxc/CheckFunctionExists.c
+        Linking C executable cmTC_e9d9d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9d9d.dir/link.txt --verbose=1
+        ld: error: undefined symbol: msgbuf_new_reader
+        >>> referenced by CheckFunctionExists.c
+        >>>               CMakeFiles/cmTC_e9d9d.dir/CheckFunctionExists.c.o:(main)
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=msgbuf_new_reader CMakeFiles/cmTC_e9d9d.dir/CheckFunctionExists.c.o -o cmTC_e9d9d
+        gmake[1]: *** [CMakeFiles/cmTC_e9d9d.dir/build.make:103: cmTC_e9d9d] Error 1
+        gmake[1]: Leaving directory '/root/openiked-portable/build/CMakeFiles/CMakeScratch/TryCompile-wSHpxc'
+        gmake: *** [Makefile:134: cmTC_e9d9d/fast] Error 2
+        
+      exitCode: 2
+...

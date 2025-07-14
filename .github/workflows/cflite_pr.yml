@@ -1,0 +1,38 @@
+name: ClusterFuzzLite PR fuzzing
+on:
+  pull_request:
+    paths:
+      - iked/ikev2_pld.c
+      - regress/parser-libfuzzer/**
+permissions: read-all
+jobs:
+  PR:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        sanitizer:
+        - address
+        - undefined
+    steps:
+    - name: Build Fuzzers (${{ matrix.sanitizer }})
+      id: build
+      uses: google/clusterfuzzlite/actions/build_fuzzers@v1
+      with:
+        sanitizer: ${{ matrix.sanitizer }}
+        # used to only run fuzzers that are affected by the PR.
+        storage-repo: https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/openiked/openiked-fuzzing.git
+        storage-repo-branch: main
+        storage-repo-branch-coverage: gh-pages
+    - name: Run Fuzzers (${{ matrix.sanitizer }})
+      id: run
+      uses: google/clusterfuzzlite/actions/run_fuzzers@v1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        fuzz-seconds: 600
+        mode: 'code-change'
+        sanitizer: ${{ matrix.sanitizer }}
+        # used to download the corpus produced by batch fuzzing.
+        storage-repo: https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/openiked/openiked-fuzzing.git
+        storage-repo-branch: main
+        storage-repo-branch-coverage: gh-pages

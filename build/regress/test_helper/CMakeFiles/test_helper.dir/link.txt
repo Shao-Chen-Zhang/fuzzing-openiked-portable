@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar qc libtest_helper.a CMakeFiles/test_helper.dir/test_helper.c.o CMakeFiles/test_helper.dir/fuzz.c.o ../../compat/CMakeFiles/compat.dir/recallocarray.c.o ../../compat/CMakeFiles/compat.dir/getrtable.c.o ../../compat/CMakeFiles/compat.dir/getdtablecount.c.o ../../compat/CMakeFiles/compat.dir/imsg.c.o "../../compat/CMakeFiles/compat.dir/imsg-buffer.c.o" ../../compat/CMakeFiles/compat.dir/freezero.c.o
+/usr/bin/llvm-ranlib libtest_helper.a
