@@ -1,4 +1,4 @@
-/* Automatically generated from /root/openiked-portable/iked/ikev2.h, do not edit */
+/* Automatically generated from /root/fuzzing-openiked-portable/iked/ikev2.h, do not edit */
 /*	$OpenBSD: ikev2.h,v 1.35 2023/06/28 14:10:24 tobhe Exp $	*/
 
 /*

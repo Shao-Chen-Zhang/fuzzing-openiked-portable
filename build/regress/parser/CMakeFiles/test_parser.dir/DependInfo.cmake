@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/openiked-portable/regress/parser/common.c" "regress/parser/CMakeFiles/test_parser.dir/common.c.o" "gcc" "regress/parser/CMakeFiles/test_parser.dir/common.c.o.d"
-  "/root/openiked-portable/regress/parser/test_parser_fuzz.c" "regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o" "gcc" "regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o.d"
-  "/root/openiked-portable/regress/parser/tests.c" "regress/parser/CMakeFiles/test_parser.dir/tests.c.o" "gcc" "regress/parser/CMakeFiles/test_parser.dir/tests.c.o.d"
+  "/root/fuzzing-openiked-portable/regress/parser/common.c" "regress/parser/CMakeFiles/test_parser.dir/common.c.o" "gcc" "regress/parser/CMakeFiles/test_parser.dir/common.c.o.d"
+  "/root/fuzzing-openiked-portable/regress/parser/test_parser_fuzz.c" "regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o" "gcc" "regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o.d"
+  "/root/fuzzing-openiked-portable/regress/parser/tests.c" "regress/parser/CMakeFiles/test_parser.dir/tests.c.o" "gcc" "regress/parser/CMakeFiles/test_parser.dir/tests.c.o.d"
   "" "regress/parser/test_parser" "gcc" "regress/parser/CMakeFiles/test_parser.dir/link.d"
   )
 

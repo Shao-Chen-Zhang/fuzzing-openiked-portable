@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/openiked-portable
+CMAKE_SOURCE_DIR = /root/fuzzing-openiked-portable
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/openiked-portable/build
+CMAKE_BINARY_DIR = /root/fuzzing-openiked-portable/build
 
 # Include any dependencies generated for this target.
 include regress/parser/CMakeFiles/test_parser.dir/depend.make
@@ -73,46 +73,46 @@ regress/parser/CMakeFiles/test_parser.dir/codegen:
 .PHONY : regress/parser/CMakeFiles/test_parser.dir/codegen
 
 regress/parser/CMakeFiles/test_parser.dir/tests.c.o: regress/parser/CMakeFiles/test_parser.dir/flags.make
-regress/parser/CMakeFiles/test_parser.dir/tests.c.o: /root/openiked-portable/regress/parser/tests.c
+regress/parser/CMakeFiles/test_parser.dir/tests.c.o: /root/fuzzing-openiked-portable/regress/parser/tests.c
 regress/parser/CMakeFiles/test_parser.dir/tests.c.o: regress/parser/CMakeFiles/test_parser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object regress/parser/CMakeFiles/test_parser.dir/tests.c.o"
-	cd /root/openiked-portable/build/regress/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/parser/CMakeFiles/test_parser.dir/tests.c.o -MF CMakeFiles/test_parser.dir/tests.c.o.d -o CMakeFiles/test_parser.dir/tests.c.o -c /root/openiked-portable/regress/parser/tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object regress/parser/CMakeFiles/test_parser.dir/tests.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/parser && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/parser/CMakeFiles/test_parser.dir/tests.c.o -MF CMakeFiles/test_parser.dir/tests.c.o.d -o CMakeFiles/test_parser.dir/tests.c.o -c /root/fuzzing-openiked-portable/regress/parser/tests.c
 
 regress/parser/CMakeFiles/test_parser.dir/tests.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_parser.dir/tests.c.i"
-	cd /root/openiked-portable/build/regress/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/regress/parser/tests.c > CMakeFiles/test_parser.dir/tests.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/parser && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/regress/parser/tests.c > CMakeFiles/test_parser.dir/tests.c.i
 
 regress/parser/CMakeFiles/test_parser.dir/tests.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_parser.dir/tests.c.s"
-	cd /root/openiked-portable/build/regress/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/regress/parser/tests.c -o CMakeFiles/test_parser.dir/tests.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/parser && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/regress/parser/tests.c -o CMakeFiles/test_parser.dir/tests.c.s
 
 regress/parser/CMakeFiles/test_parser.dir/common.c.o: regress/parser/CMakeFiles/test_parser.dir/flags.make
-regress/parser/CMakeFiles/test_parser.dir/common.c.o: /root/openiked-portable/regress/parser/common.c
+regress/parser/CMakeFiles/test_parser.dir/common.c.o: /root/fuzzing-openiked-portable/regress/parser/common.c
 regress/parser/CMakeFiles/test_parser.dir/common.c.o: regress/parser/CMakeFiles/test_parser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object regress/parser/CMakeFiles/test_parser.dir/common.c.o"
-	cd /root/openiked-portable/build/regress/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/parser/CMakeFiles/test_parser.dir/common.c.o -MF CMakeFiles/test_parser.dir/common.c.o.d -o CMakeFiles/test_parser.dir/common.c.o -c /root/openiked-portable/regress/parser/common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object regress/parser/CMakeFiles/test_parser.dir/common.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/parser && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/parser/CMakeFiles/test_parser.dir/common.c.o -MF CMakeFiles/test_parser.dir/common.c.o.d -o CMakeFiles/test_parser.dir/common.c.o -c /root/fuzzing-openiked-portable/regress/parser/common.c
 
 regress/parser/CMakeFiles/test_parser.dir/common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_parser.dir/common.c.i"
-	cd /root/openiked-portable/build/regress/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/regress/parser/common.c > CMakeFiles/test_parser.dir/common.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/parser && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/regress/parser/common.c > CMakeFiles/test_parser.dir/common.c.i
 
 regress/parser/CMakeFiles/test_parser.dir/common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_parser.dir/common.c.s"
-	cd /root/openiked-portable/build/regress/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/regress/parser/common.c -o CMakeFiles/test_parser.dir/common.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/parser && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/regress/parser/common.c -o CMakeFiles/test_parser.dir/common.c.s
 
 regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o: regress/parser/CMakeFiles/test_parser.dir/flags.make
-regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o: /root/openiked-portable/regress/parser/test_parser_fuzz.c
+regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o: /root/fuzzing-openiked-portable/regress/parser/test_parser_fuzz.c
 regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o: regress/parser/CMakeFiles/test_parser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o"
-	cd /root/openiked-portable/build/regress/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o -MF CMakeFiles/test_parser.dir/test_parser_fuzz.c.o.d -o CMakeFiles/test_parser.dir/test_parser_fuzz.c.o -c /root/openiked-portable/regress/parser/test_parser_fuzz.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/parser && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.o -MF CMakeFiles/test_parser.dir/test_parser_fuzz.c.o.d -o CMakeFiles/test_parser.dir/test_parser_fuzz.c.o -c /root/fuzzing-openiked-portable/regress/parser/test_parser_fuzz.c
 
 regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_parser.dir/test_parser_fuzz.c.i"
-	cd /root/openiked-portable/build/regress/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/regress/parser/test_parser_fuzz.c > CMakeFiles/test_parser.dir/test_parser_fuzz.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/parser && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/regress/parser/test_parser_fuzz.c > CMakeFiles/test_parser.dir/test_parser_fuzz.c.i
 
 regress/parser/CMakeFiles/test_parser.dir/test_parser_fuzz.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_parser.dir/test_parser_fuzz.c.s"
-	cd /root/openiked-portable/build/regress/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/regress/parser/test_parser_fuzz.c -o CMakeFiles/test_parser.dir/test_parser_fuzz.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/parser && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/regress/parser/test_parser_fuzz.c -o CMakeFiles/test_parser.dir/test_parser_fuzz.c.s
 
 # Object files for target test_parser
 test_parser_OBJECTS = \
@@ -122,18 +122,18 @@ test_parser_OBJECTS = \
 
 # External object files for target test_parser
 test_parser_EXTERNAL_OBJECTS = \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/recallocarray.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/getrtable.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/getdtablecount.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/imsg.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/imsg-buffer.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/freezero.c.o" \
-"/root/openiked-portable/build/iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o" \
-"/root/openiked-portable/build/iked/CMakeFiles/iked-shared.dir/imsg_util.c.o" \
-"/root/openiked-portable/build/iked/CMakeFiles/iked-shared.dir/log.c.o" \
-"/root/openiked-portable/build/iked/CMakeFiles/iked-shared.dir/util.c.o" \
-"/root/openiked-portable/build/iked/CMakeFiles/iked-shared.dir/ikev2_map.c.o" \
-"/root/openiked-portable/build/iked/CMakeFiles/iked-shared.dir/eap_map.c.o"
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/recallocarray.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/getrtable.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/getdtablecount.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/imsg.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/imsg-buffer.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/freezero.c.o" \
+"/root/fuzzing-openiked-portable/build/iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o" \
+"/root/fuzzing-openiked-portable/build/iked/CMakeFiles/iked-shared.dir/imsg_util.c.o" \
+"/root/fuzzing-openiked-portable/build/iked/CMakeFiles/iked-shared.dir/log.c.o" \
+"/root/fuzzing-openiked-portable/build/iked/CMakeFiles/iked-shared.dir/util.c.o" \
+"/root/fuzzing-openiked-portable/build/iked/CMakeFiles/iked-shared.dir/ikev2_map.c.o" \
+"/root/fuzzing-openiked-portable/build/iked/CMakeFiles/iked-shared.dir/eap_map.c.o"
 
 regress/parser/test_parser: regress/parser/CMakeFiles/test_parser.dir/tests.c.o
 regress/parser/test_parser: regress/parser/CMakeFiles/test_parser.dir/common.c.o
@@ -154,18 +154,18 @@ regress/parser/test_parser: regress/parser/CMakeFiles/test_parser.dir/build.make
 regress/parser/test_parser: regress/parser/CMakeFiles/test_parser.dir/compiler_depend.ts
 regress/parser/test_parser: regress/test_helper/libtest_helper.a
 regress/parser/test_parser: regress/parser/CMakeFiles/test_parser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable test_parser"
-	cd /root/openiked-portable/build/regress/parser && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_parser.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable test_parser"
+	cd /root/fuzzing-openiked-portable/build/regress/parser && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_parser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 regress/parser/CMakeFiles/test_parser.dir/build: regress/parser/test_parser
 .PHONY : regress/parser/CMakeFiles/test_parser.dir/build
 
 regress/parser/CMakeFiles/test_parser.dir/clean:
-	cd /root/openiked-portable/build/regress/parser && $(CMAKE_COMMAND) -P CMakeFiles/test_parser.dir/cmake_clean.cmake
+	cd /root/fuzzing-openiked-portable/build/regress/parser && $(CMAKE_COMMAND) -P CMakeFiles/test_parser.dir/cmake_clean.cmake
 .PHONY : regress/parser/CMakeFiles/test_parser.dir/clean
 
 regress/parser/CMakeFiles/test_parser.dir/depend:
-	cd /root/openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/openiked-portable /root/openiked-portable/regress/parser /root/openiked-portable/build /root/openiked-portable/build/regress/parser /root/openiked-portable/build/regress/parser/CMakeFiles/test_parser.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/fuzzing-openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/fuzzing-openiked-portable /root/fuzzing-openiked-portable/regress/parser /root/fuzzing-openiked-portable/build /root/fuzzing-openiked-portable/build/regress/parser /root/fuzzing-openiked-portable/build/regress/parser/CMakeFiles/test_parser.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : regress/parser/CMakeFiles/test_parser.dir/depend
 

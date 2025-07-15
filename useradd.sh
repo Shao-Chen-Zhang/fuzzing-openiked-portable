@@ -1,5 +1,5 @@
 #!/bin/sh
 
-set -e
-groupadd _iked
-useradd -M -d /var/empty -s $(which nologin) -c "IKEv2 Daemon" -g _iked _iked
+# FUZZ: FreeBSD
+pw groupadd _iked
+pw useradd _iked -g _iked -s /sbin/nologin -d /var/empty -c 'IKEv2 Daemon'

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/openiked-portable
+CMAKE_SOURCE_DIR = /root/fuzzing-openiked-portable
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/openiked-portable/build
+CMAKE_BINARY_DIR = /root/fuzzing-openiked-portable/build
 
 # Include any dependencies generated for this target.
 include regress/test_helper/CMakeFiles/test_helper.dir/depend.make
@@ -73,32 +73,32 @@ regress/test_helper/CMakeFiles/test_helper.dir/codegen:
 .PHONY : regress/test_helper/CMakeFiles/test_helper.dir/codegen
 
 regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.o: regress/test_helper/CMakeFiles/test_helper.dir/flags.make
-regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.o: /root/openiked-portable/regress/test_helper/test_helper.c
+regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.o: /root/fuzzing-openiked-portable/regress/test_helper/test_helper.c
 regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.o: regress/test_helper/CMakeFiles/test_helper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.o"
-	cd /root/openiked-portable/build/regress/test_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.o -MF CMakeFiles/test_helper.dir/test_helper.c.o.d -o CMakeFiles/test_helper.dir/test_helper.c.o -c /root/openiked-portable/regress/test_helper/test_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/test_helper && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.o -MF CMakeFiles/test_helper.dir/test_helper.c.o.d -o CMakeFiles/test_helper.dir/test_helper.c.o -c /root/fuzzing-openiked-portable/regress/test_helper/test_helper.c
 
 regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_helper.dir/test_helper.c.i"
-	cd /root/openiked-portable/build/regress/test_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/regress/test_helper/test_helper.c > CMakeFiles/test_helper.dir/test_helper.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/test_helper && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/regress/test_helper/test_helper.c > CMakeFiles/test_helper.dir/test_helper.c.i
 
 regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_helper.dir/test_helper.c.s"
-	cd /root/openiked-portable/build/regress/test_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/regress/test_helper/test_helper.c -o CMakeFiles/test_helper.dir/test_helper.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/test_helper && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/regress/test_helper/test_helper.c -o CMakeFiles/test_helper.dir/test_helper.c.s
 
 regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.o: regress/test_helper/CMakeFiles/test_helper.dir/flags.make
-regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.o: /root/openiked-portable/regress/test_helper/fuzz.c
+regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.o: /root/fuzzing-openiked-portable/regress/test_helper/fuzz.c
 regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.o: regress/test_helper/CMakeFiles/test_helper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.o"
-	cd /root/openiked-portable/build/regress/test_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.o -MF CMakeFiles/test_helper.dir/fuzz.c.o.d -o CMakeFiles/test_helper.dir/fuzz.c.o -c /root/openiked-portable/regress/test_helper/fuzz.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/test_helper && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.o -MF CMakeFiles/test_helper.dir/fuzz.c.o.d -o CMakeFiles/test_helper.dir/fuzz.c.o -c /root/fuzzing-openiked-portable/regress/test_helper/fuzz.c
 
 regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_helper.dir/fuzz.c.i"
-	cd /root/openiked-portable/build/regress/test_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/regress/test_helper/fuzz.c > CMakeFiles/test_helper.dir/fuzz.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/test_helper && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/regress/test_helper/fuzz.c > CMakeFiles/test_helper.dir/fuzz.c.i
 
 regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_helper.dir/fuzz.c.s"
-	cd /root/openiked-portable/build/regress/test_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/regress/test_helper/fuzz.c -o CMakeFiles/test_helper.dir/fuzz.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/test_helper && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/regress/test_helper/fuzz.c -o CMakeFiles/test_helper.dir/fuzz.c.s
 
 # Object files for target test_helper
 test_helper_OBJECTS = \
@@ -107,12 +107,12 @@ test_helper_OBJECTS = \
 
 # External object files for target test_helper
 test_helper_EXTERNAL_OBJECTS = \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/recallocarray.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/getrtable.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/getdtablecount.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/imsg.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/imsg-buffer.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/freezero.c.o"
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/recallocarray.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/getrtable.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/getdtablecount.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/imsg.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/imsg-buffer.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/freezero.c.o"
 
 regress/test_helper/libtest_helper.a: regress/test_helper/CMakeFiles/test_helper.dir/test_helper.c.o
 regress/test_helper/libtest_helper.a: regress/test_helper/CMakeFiles/test_helper.dir/fuzz.c.o
@@ -124,19 +124,19 @@ regress/test_helper/libtest_helper.a: compat/CMakeFiles/compat.dir/imsg-buffer.c
 regress/test_helper/libtest_helper.a: compat/CMakeFiles/compat.dir/freezero.c.o
 regress/test_helper/libtest_helper.a: regress/test_helper/CMakeFiles/test_helper.dir/build.make
 regress/test_helper/libtest_helper.a: regress/test_helper/CMakeFiles/test_helper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libtest_helper.a"
-	cd /root/openiked-portable/build/regress/test_helper && $(CMAKE_COMMAND) -P CMakeFiles/test_helper.dir/cmake_clean_target.cmake
-	cd /root/openiked-portable/build/regress/test_helper && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_helper.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libtest_helper.a"
+	cd /root/fuzzing-openiked-portable/build/regress/test_helper && $(CMAKE_COMMAND) -P CMakeFiles/test_helper.dir/cmake_clean_target.cmake
+	cd /root/fuzzing-openiked-portable/build/regress/test_helper && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_helper.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 regress/test_helper/CMakeFiles/test_helper.dir/build: regress/test_helper/libtest_helper.a
 .PHONY : regress/test_helper/CMakeFiles/test_helper.dir/build
 
 regress/test_helper/CMakeFiles/test_helper.dir/clean:
-	cd /root/openiked-portable/build/regress/test_helper && $(CMAKE_COMMAND) -P CMakeFiles/test_helper.dir/cmake_clean.cmake
+	cd /root/fuzzing-openiked-portable/build/regress/test_helper && $(CMAKE_COMMAND) -P CMakeFiles/test_helper.dir/cmake_clean.cmake
 .PHONY : regress/test_helper/CMakeFiles/test_helper.dir/clean
 
 regress/test_helper/CMakeFiles/test_helper.dir/depend:
-	cd /root/openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/openiked-portable /root/openiked-portable/regress/test_helper /root/openiked-portable/build /root/openiked-portable/build/regress/test_helper /root/openiked-portable/build/regress/test_helper/CMakeFiles/test_helper.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/fuzzing-openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/fuzzing-openiked-portable /root/fuzzing-openiked-portable/regress/test_helper /root/fuzzing-openiked-portable/build /root/fuzzing-openiked-portable/build/regress/test_helper /root/fuzzing-openiked-portable/build/regress/test_helper/CMakeFiles/test_helper.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : regress/test_helper/CMakeFiles/test_helper.dir/depend
 

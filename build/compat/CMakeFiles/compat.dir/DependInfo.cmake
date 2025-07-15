@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/openiked-portable/compat/freezero.c" "compat/CMakeFiles/compat.dir/freezero.c.o" "gcc" "compat/CMakeFiles/compat.dir/freezero.c.o.d"
-  "/root/openiked-portable/compat/getdtablecount.c" "compat/CMakeFiles/compat.dir/getdtablecount.c.o" "gcc" "compat/CMakeFiles/compat.dir/getdtablecount.c.o.d"
-  "/root/openiked-portable/compat/getrtable.c" "compat/CMakeFiles/compat.dir/getrtable.c.o" "gcc" "compat/CMakeFiles/compat.dir/getrtable.c.o.d"
-  "/root/openiked-portable/compat/imsg-buffer.c" "compat/CMakeFiles/compat.dir/imsg-buffer.c.o" "gcc" "compat/CMakeFiles/compat.dir/imsg-buffer.c.o.d"
-  "/root/openiked-portable/compat/imsg.c" "compat/CMakeFiles/compat.dir/imsg.c.o" "gcc" "compat/CMakeFiles/compat.dir/imsg.c.o.d"
-  "/root/openiked-portable/compat/recallocarray.c" "compat/CMakeFiles/compat.dir/recallocarray.c.o" "gcc" "compat/CMakeFiles/compat.dir/recallocarray.c.o.d"
+  "/root/fuzzing-openiked-portable/compat/freezero.c" "compat/CMakeFiles/compat.dir/freezero.c.o" "gcc" "compat/CMakeFiles/compat.dir/freezero.c.o.d"
+  "/root/fuzzing-openiked-portable/compat/getdtablecount.c" "compat/CMakeFiles/compat.dir/getdtablecount.c.o" "gcc" "compat/CMakeFiles/compat.dir/getdtablecount.c.o.d"
+  "/root/fuzzing-openiked-portable/compat/getrtable.c" "compat/CMakeFiles/compat.dir/getrtable.c.o" "gcc" "compat/CMakeFiles/compat.dir/getrtable.c.o.d"
+  "/root/fuzzing-openiked-portable/compat/imsg-buffer.c" "compat/CMakeFiles/compat.dir/imsg-buffer.c.o" "gcc" "compat/CMakeFiles/compat.dir/imsg-buffer.c.o.d"
+  "/root/fuzzing-openiked-portable/compat/imsg.c" "compat/CMakeFiles/compat.dir/imsg.c.o" "gcc" "compat/CMakeFiles/compat.dir/imsg.c.o.d"
+  "/root/fuzzing-openiked-portable/compat/recallocarray.c" "compat/CMakeFiles/compat.dir/recallocarray.c.o" "gcc" "compat/CMakeFiles/compat.dir/recallocarray.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

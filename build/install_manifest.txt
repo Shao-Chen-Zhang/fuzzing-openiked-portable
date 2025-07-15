@@ -1,8 +1,0 @@
-/usr/local/sbin/iked
-/usr/local/etc/iked.conf
-/usr/local/man/man5/iked.conf.5
-/usr/local/man/man8/iked.8
-/usr/local/sbin/ikectl
-/usr/local/man/man8/ikectl.8
-/usr/local/etc/ssl/ikeca.cnf
-/usr/local/etc/ssl/ikex509v3.cnf

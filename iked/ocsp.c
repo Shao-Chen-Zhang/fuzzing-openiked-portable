@@ -244,6 +244,10 @@ ocsp_connect_finish(struct iked *env, int fd, struct ocsp_connect *oc)
 			    oc->oc_url ? oc->oc_url : "unknown");
 		else
 			log_info("%s: connect failed", __func__);
+		//FUZZ: PATCH-1 start
+		if (oc == NULL) 
+			iovcnt = 0;
+		//FUZZ: PATCH-1 end
 		ret = proc_composev_imsg(&env->sc_ps, PROC_CERT, -1,
 		    IMSG_OCSP_FD, -1, -1, iov, iovcnt);
 		if (fd >= 0)

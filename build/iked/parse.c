@@ -17,7 +17,7 @@
 
 #define YYPURE 0
 
-#line 26 "/root/openiked-portable/iked/parse.y"
+#line 26 "/root/fuzzing-openiked-portable/iked/parse.y"
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <sys/queue.h>
@@ -1086,7 +1086,7 @@ typedef struct {
 } YYSTACKDATA;
 /* variables for the parser stack */
 static YYSTACKDATA yystack;
-#line 1321 "/root/openiked-portable/iked/parse.y"
+#line 1321 "/root/fuzzing-openiked-portable/iked/parse.y"
 
 struct keywords {
 	const char	*k_name;
@@ -3154,12 +3154,12 @@ yyreduce:
     switch (yyn)
     {
 case 9:
-#line 494 "/root/openiked-portable/iked/parse.y"
+#line 494 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ file->errors++; }
 #line 3160 "parse.c"
 break;
 case 12:
-#line 501 "/root/openiked-portable/iked/parse.y"
+#line 501 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			struct file	*nfile;
 
@@ -3176,84 +3176,84 @@ case 12:
 #line 3177 "parse.c"
 break;
 case 13:
-#line 516 "/root/openiked-portable/iked/parse.y"
+#line 516 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ passive = 0; }
 #line 3182 "parse.c"
 break;
 case 14:
-#line 517 "/root/openiked-portable/iked/parse.y"
+#line 517 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ passive = 1; }
 #line 3187 "parse.c"
 break;
 case 15:
-#line 518 "/root/openiked-portable/iked/parse.y"
+#line 518 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ decouple = 0; }
 #line 3192 "parse.c"
 break;
 case 16:
-#line 519 "/root/openiked-portable/iked/parse.y"
+#line 519 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ decouple = 1; }
 #line 3197 "parse.c"
 break;
 case 17:
-#line 520 "/root/openiked-portable/iked/parse.y"
+#line 520 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ fragmentation = 1; }
 #line 3202 "parse.c"
 break;
 case 18:
-#line 521 "/root/openiked-portable/iked/parse.y"
+#line 521 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ fragmentation = 0; }
 #line 3207 "parse.c"
 break;
 case 19:
-#line 522 "/root/openiked-portable/iked/parse.y"
+#line 522 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ mobike = 1; }
 #line 3212 "parse.c"
 break;
 case 20:
-#line 523 "/root/openiked-portable/iked/parse.y"
+#line 523 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ mobike = 0; }
 #line 3217 "parse.c"
 break;
 case 21:
-#line 524 "/root/openiked-portable/iked/parse.y"
+#line 524 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ vendorid = 1; }
 #line 3222 "parse.c"
 break;
 case 22:
-#line 525 "/root/openiked-portable/iked/parse.y"
+#line 525 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ vendorid = 0; }
 #line 3227 "parse.c"
 break;
 case 23:
-#line 526 "/root/openiked-portable/iked/parse.y"
+#line 526 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ enforcesingleikesa = 1; }
 #line 3232 "parse.c"
 break;
 case 24:
-#line 527 "/root/openiked-portable/iked/parse.y"
+#line 527 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ enforcesingleikesa = 0; }
 #line 3237 "parse.c"
 break;
 case 25:
-#line 528 "/root/openiked-portable/iked/parse.y"
+#line 528 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ stickyaddress = 1; }
 #line 3242 "parse.c"
 break;
 case 26:
-#line 529 "/root/openiked-portable/iked/parse.y"
+#line 529 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ stickyaddress = 0; }
 #line 3247 "parse.c"
 break;
 case 27:
-#line 530 "/root/openiked-portable/iked/parse.y"
+#line 530 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			ocsp_url = yystack.l_mark[0].v.string;
 		}
 #line 3254 "parse.c"
 break;
 case 28:
-#line 533 "/root/openiked-portable/iked/parse.y"
+#line 533 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			ocsp_url = yystack.l_mark[-2].v.string;
 			ocsp_tolerate = yystack.l_mark[0].v.number;
@@ -3261,7 +3261,7 @@ case 28:
 #line 3262 "parse.c"
 break;
 case 29:
-#line 537 "/root/openiked-portable/iked/parse.y"
+#line 537 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			ocsp_url = yystack.l_mark[-4].v.string;
 			ocsp_tolerate = yystack.l_mark[-2].v.number;
@@ -3270,14 +3270,14 @@ case 29:
 #line 3271 "parse.c"
 break;
 case 30:
-#line 542 "/root/openiked-portable/iked/parse.y"
+#line 542 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			cert_partial_chain = 1;
 		}
 #line 3278 "parse.c"
 break;
 case 31:
-#line 545 "/root/openiked-portable/iked/parse.y"
+#line 545 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (yystack.l_mark[0].v.number < 0) {
 				yyerror("timeout outside range");
@@ -3288,7 +3288,7 @@ case 31:
 #line 3289 "parse.c"
 break;
 case 32:
-#line 554 "/root/openiked-portable/iked/parse.y"
+#line 554 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (create_user(yystack.l_mark[-1].v.string, yystack.l_mark[0].v.string) == -1)
 				YYERROR;
@@ -3298,7 +3298,7 @@ case 32:
 #line 3299 "parse.c"
 break;
 case 33:
-#line 564 "/root/openiked-portable/iked/parse.y"
+#line 564 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (create_ike(yystack.l_mark[-16].v.string, yystack.l_mark[-13].v.number, yystack.l_mark[-12].v.proto, yystack.l_mark[-11].v.number, yystack.l_mark[-10].v.hosts, &yystack.l_mark[-9].v.peers, yystack.l_mark[-8].v.mode, yystack.l_mark[-7].v.mode, yystack.l_mark[-14].v.satype,
 			    yystack.l_mark[-15].v.ikemode, yystack.l_mark[-6].v.ids.srcid, yystack.l_mark[-6].v.ids.dstid, yystack.l_mark[-5].v.number, &yystack.l_mark[-4].v.lifetime, &yystack.l_mark[-3].v.ikeauth,
@@ -3310,22 +3310,22 @@ case 33:
 #line 3311 "parse.c"
 break;
 case 34:
-#line 574 "/root/openiked-portable/iked/parse.y"
+#line 574 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.cfg = NULL; }
 #line 3316 "parse.c"
 break;
 case 35:
-#line 575 "/root/openiked-portable/iked/parse.y"
+#line 575 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.cfg = yystack.l_mark[0].v.cfg; }
 #line 3321 "parse.c"
 break;
 case 36:
-#line 578 "/root/openiked-portable/iked/parse.y"
+#line 578 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.cfg = yystack.l_mark[0].v.cfg; }
 #line 3326 "parse.c"
 break;
 case 37:
-#line 579 "/root/openiked-portable/iked/parse.y"
+#line 579 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (yystack.l_mark[0].v.cfg == NULL)
 				yyval.v.cfg = yystack.l_mark[-1].v.cfg;
@@ -3340,7 +3340,7 @@ case 37:
 #line 3341 "parse.c"
 break;
 case 38:
-#line 592 "/root/openiked-portable/iked/parse.y"
+#line 592 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			const struct ipsec_xf	*xf;
 
@@ -3358,7 +3358,7 @@ case 38:
 #line 3359 "parse.c"
 break;
 case 39:
-#line 606 "/root/openiked-portable/iked/parse.y"
+#line 606 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			const struct ipsec_xf	*xf;
 
@@ -3376,69 +3376,69 @@ case 39:
 #line 3377 "parse.c"
 break;
 case 40:
-#line 622 "/root/openiked-portable/iked/parse.y"
+#line 622 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.string = NULL; }
 #line 3382 "parse.c"
 break;
 case 41:
-#line 623 "/root/openiked-portable/iked/parse.y"
+#line 623 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.string = yystack.l_mark[0].v.string;
 		}
 #line 3389 "parse.c"
 break;
 case 42:
-#line 627 "/root/openiked-portable/iked/parse.y"
+#line 627 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.satype = IKEV2_SAPROTO_ESP; }
 #line 3394 "parse.c"
 break;
 case 43:
-#line 628 "/root/openiked-portable/iked/parse.y"
+#line 628 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.satype = IKEV2_SAPROTO_ESP; }
 #line 3399 "parse.c"
 break;
 case 44:
-#line 629 "/root/openiked-portable/iked/parse.y"
+#line 629 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.satype = IKEV2_SAPROTO_AH; }
 #line 3404 "parse.c"
 break;
 case 45:
-#line 632 "/root/openiked-portable/iked/parse.y"
+#line 632 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.number = AF_UNSPEC; }
 #line 3409 "parse.c"
 break;
 case 46:
-#line 633 "/root/openiked-portable/iked/parse.y"
+#line 633 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.number = AF_INET; }
 #line 3414 "parse.c"
 break;
 case 47:
-#line 634 "/root/openiked-portable/iked/parse.y"
+#line 634 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.number = AF_INET6; }
 #line 3419 "parse.c"
 break;
 case 48:
-#line 637 "/root/openiked-portable/iked/parse.y"
+#line 637 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.proto = NULL; }
 #line 3424 "parse.c"
 break;
 case 49:
-#line 638 "/root/openiked-portable/iked/parse.y"
+#line 638 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.proto = yystack.l_mark[0].v.proto; }
 #line 3429 "parse.c"
 break;
 case 50:
-#line 639 "/root/openiked-portable/iked/parse.y"
+#line 639 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.proto = yystack.l_mark[-1].v.proto; }
 #line 3434 "parse.c"
 break;
 case 51:
-#line 642 "/root/openiked-portable/iked/parse.y"
+#line 642 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.proto = yystack.l_mark[0].v.proto; }
 #line 3439 "parse.c"
 break;
 case 52:
-#line 643 "/root/openiked-portable/iked/parse.y"
+#line 643 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (yystack.l_mark[0].v.proto == NULL)
 				yyval.v.proto = yystack.l_mark[-2].v.proto;
@@ -3453,7 +3453,7 @@ case 52:
 #line 3454 "parse.c"
 break;
 case 53:
-#line 656 "/root/openiked-portable/iked/parse.y"
+#line 656 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			struct protoent *p;
 
@@ -3473,7 +3473,7 @@ case 53:
 #line 3474 "parse.c"
 break;
 case 54:
-#line 672 "/root/openiked-portable/iked/parse.y"
+#line 672 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (yystack.l_mark[0].v.number > 255 || yystack.l_mark[0].v.number < 0) {
 				yyerror("protocol outside range");
@@ -3488,12 +3488,12 @@ case 54:
 #line 3489 "parse.c"
 break;
 case 55:
-#line 685 "/root/openiked-portable/iked/parse.y"
+#line 685 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.number = -1; }
 #line 3494 "parse.c"
 break;
 case 56:
-#line 686 "/root/openiked-portable/iked/parse.y"
+#line 686 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 #ifdef SADB_X_EXT_RDOMAIN
 			if (yystack.l_mark[0].v.number > 255 || yystack.l_mark[0].v.number < 0) {
@@ -3509,12 +3509,12 @@ case 56:
 #line 3510 "parse.c"
 break;
 case 57:
-#line 699 "/root/openiked-portable/iked/parse.y"
+#line 699 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.hosts = yystack.l_mark[0].v.hosts; }
 #line 3515 "parse.c"
 break;
 case 58:
-#line 700 "/root/openiked-portable/iked/parse.y"
+#line 700 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (yystack.l_mark[0].v.hosts == NULL)
 				yyval.v.hosts = yystack.l_mark[-2].v.hosts;
@@ -3532,7 +3532,7 @@ case 58:
 #line 3533 "parse.c"
 break;
 case 59:
-#line 716 "/root/openiked-portable/iked/parse.y"
+#line 716 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			struct ipsec_addr_wrap *ipa;
 			for (ipa = yystack.l_mark[-1].v.host; ipa; ipa = ipa->next) {
@@ -3555,7 +3555,7 @@ case 59:
 #line 3556 "parse.c"
 break;
 case 60:
-#line 735 "/root/openiked-portable/iked/parse.y"
+#line 735 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			struct ipsec_addr_wrap *ipa;
 			for (ipa = yystack.l_mark[-4].v.host; ipa; ipa = ipa->next) {
@@ -3577,17 +3577,17 @@ case 60:
 #line 3578 "parse.c"
 break;
 case 61:
-#line 755 "/root/openiked-portable/iked/parse.y"
+#line 755 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.port = 0; }
 #line 3583 "parse.c"
 break;
 case 62:
-#line 756 "/root/openiked-portable/iked/parse.y"
+#line 756 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.port = yystack.l_mark[0].v.number; }
 #line 3588 "parse.c"
 break;
 case 63:
-#line 759 "/root/openiked-portable/iked/parse.y"
+#line 759 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			struct servent *s;
 
@@ -3603,7 +3603,7 @@ case 63:
 #line 3604 "parse.c"
 break;
 case 64:
-#line 771 "/root/openiked-portable/iked/parse.y"
+#line 771 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (yystack.l_mark[0].v.number > USHRT_MAX || yystack.l_mark[0].v.number < 0) {
 				yyerror("port outside range");
@@ -3614,7 +3614,7 @@ case 64:
 #line 3615 "parse.c"
 break;
 case 65:
-#line 780 "/root/openiked-portable/iked/parse.y"
+#line 780 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.peers.dst = NULL;
 			yyval.v.peers.src = NULL;
@@ -3622,7 +3622,7 @@ case 65:
 #line 3623 "parse.c"
 break;
 case 66:
-#line 784 "/root/openiked-portable/iked/parse.y"
+#line 784 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.peers.dst = yystack.l_mark[-2].v.anyhost;
 			yyval.v.peers.src = yystack.l_mark[0].v.anyhost;
@@ -3630,7 +3630,7 @@ case 66:
 #line 3631 "parse.c"
 break;
 case 67:
-#line 788 "/root/openiked-portable/iked/parse.y"
+#line 788 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.peers.dst = yystack.l_mark[0].v.anyhost;
 			yyval.v.peers.src = yystack.l_mark[-2].v.anyhost;
@@ -3638,7 +3638,7 @@ case 67:
 #line 3639 "parse.c"
 break;
 case 68:
-#line 792 "/root/openiked-portable/iked/parse.y"
+#line 792 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.peers.dst = yystack.l_mark[0].v.anyhost;
 			yyval.v.peers.src = NULL;
@@ -3646,7 +3646,7 @@ case 68:
 #line 3647 "parse.c"
 break;
 case 69:
-#line 796 "/root/openiked-portable/iked/parse.y"
+#line 796 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.peers.dst = NULL;
 			yyval.v.peers.src = yystack.l_mark[0].v.anyhost;
@@ -3654,19 +3654,19 @@ case 69:
 #line 3655 "parse.c"
 break;
 case 70:
-#line 802 "/root/openiked-portable/iked/parse.y"
+#line 802 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.anyhost = yystack.l_mark[0].v.host; }
 #line 3660 "parse.c"
 break;
 case 71:
-#line 803 "/root/openiked-portable/iked/parse.y"
+#line 803 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.anyhost = host_any();
 		}
 #line 3667 "parse.c"
 break;
 case 72:
-#line 807 "/root/openiked-portable/iked/parse.y"
+#line 807 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if ((yyval.v.host = host(yystack.l_mark[0].v.string)) == NULL) {
 				free(yystack.l_mark[0].v.string);
@@ -3678,7 +3678,7 @@ case 72:
 #line 3679 "parse.c"
 break;
 case 73:
-#line 815 "/root/openiked-portable/iked/parse.y"
+#line 815 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			char	*buf;
 
@@ -3695,12 +3695,12 @@ case 73:
 #line 3696 "parse.c"
 break;
 case 74:
-#line 830 "/root/openiked-portable/iked/parse.y"
+#line 830 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.host = yystack.l_mark[0].v.host; }
 #line 3701 "parse.c"
 break;
 case 75:
-#line 831 "/root/openiked-portable/iked/parse.y"
+#line 831 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if ((yystack.l_mark[-3].v.host->af != AF_UNSPEC) && (yystack.l_mark[-1].v.host->af != AF_UNSPEC) &&
 			    (yystack.l_mark[-1].v.host->af != yystack.l_mark[-3].v.host->af)) {
@@ -3713,21 +3713,21 @@ case 75:
 #line 3714 "parse.c"
 break;
 case 76:
-#line 840 "/root/openiked-portable/iked/parse.y"
+#line 840 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.host = host_any();
 		}
 #line 3721 "parse.c"
 break;
 case 77:
-#line 843 "/root/openiked-portable/iked/parse.y"
+#line 843 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.host = host_dynamic();
 		}
 #line 3728 "parse.c"
 break;
 case 78:
-#line 848 "/root/openiked-portable/iked/parse.y"
+#line 848 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.ids.srcid = NULL;
 			yyval.v.ids.dstid = NULL;
@@ -3735,7 +3735,7 @@ case 78:
 #line 3736 "parse.c"
 break;
 case 79:
-#line 852 "/root/openiked-portable/iked/parse.y"
+#line 852 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.ids.srcid = yystack.l_mark[-2].v.id;
 			yyval.v.ids.dstid = yystack.l_mark[0].v.id;
@@ -3743,7 +3743,7 @@ case 79:
 #line 3744 "parse.c"
 break;
 case 80:
-#line 856 "/root/openiked-portable/iked/parse.y"
+#line 856 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.ids.srcid = yystack.l_mark[0].v.id;
 			yyval.v.ids.dstid = NULL;
@@ -3751,7 +3751,7 @@ case 80:
 #line 3752 "parse.c"
 break;
 case 81:
-#line 860 "/root/openiked-portable/iked/parse.y"
+#line 860 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.ids.srcid = NULL;
 			yyval.v.ids.dstid = yystack.l_mark[0].v.id;
@@ -3759,12 +3759,12 @@ case 81:
 #line 3760 "parse.c"
 break;
 case 82:
-#line 866 "/root/openiked-portable/iked/parse.y"
+#line 866 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.id = yystack.l_mark[0].v.string; }
 #line 3765 "parse.c"
 break;
 case 83:
-#line 869 "/root/openiked-portable/iked/parse.y"
+#line 869 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if ((ipsec_transforms = calloc(1,
 			    sizeof(struct ipsec_transforms))) == NULL)
@@ -3773,21 +3773,21 @@ case 83:
 #line 3774 "parse.c"
 break;
 case 84:
-#line 874 "/root/openiked-portable/iked/parse.y"
+#line 874 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.transforms = ipsec_transforms;
 		}
 #line 3781 "parse.c"
 break;
 case 85:
-#line 877 "/root/openiked-portable/iked/parse.y"
+#line 877 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.transforms = NULL;
 		}
 #line 3788 "parse.c"
 break;
 case 88:
-#line 886 "/root/openiked-portable/iked/parse.y"
+#line 886 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			const struct ipsec_xf **xfs = ipsec_transforms->authxf;
 			size_t nxfs = ipsec_transforms->nauthxf;
@@ -3806,7 +3806,7 @@ case 88:
 #line 3807 "parse.c"
 break;
 case 89:
-#line 901 "/root/openiked-portable/iked/parse.y"
+#line 901 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			const struct ipsec_xf **xfs = ipsec_transforms->encxf;
 			size_t nxfs = ipsec_transforms->nencxf;
@@ -3825,7 +3825,7 @@ case 89:
 #line 3826 "parse.c"
 break;
 case 90:
-#line 916 "/root/openiked-portable/iked/parse.y"
+#line 916 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			const struct ipsec_xf **xfs = ipsec_transforms->prfxf;
 			size_t nxfs = ipsec_transforms->nprfxf;
@@ -3844,7 +3844,7 @@ case 90:
 #line 3845 "parse.c"
 break;
 case 91:
-#line 931 "/root/openiked-portable/iked/parse.y"
+#line 931 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			const struct ipsec_xf **xfs = ipsec_transforms->groupxf;
 			size_t nxfs = ipsec_transforms->ngroupxf;
@@ -3863,7 +3863,7 @@ case 91:
 #line 3864 "parse.c"
 break;
 case 92:
-#line 946 "/root/openiked-portable/iked/parse.y"
+#line 946 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			const struct ipsec_xf **xfs = ipsec_transforms->esnxf;
 			size_t nxfs = ipsec_transforms->nesnxf;
@@ -3881,17 +3881,17 @@ case 92:
 #line 3882 "parse.c"
 break;
 case 93:
-#line 962 "/root/openiked-portable/iked/parse.y"
+#line 962 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.string = "esn"; }
 #line 3887 "parse.c"
 break;
 case 94:
-#line 963 "/root/openiked-portable/iked/parse.y"
+#line 963 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.string = "noesn"; }
 #line 3892 "parse.c"
 break;
 case 95:
-#line 966 "/root/openiked-portable/iked/parse.y"
+#line 966 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if ((ipsec_mode = calloc(1,
 			    sizeof(struct ipsec_mode))) == NULL)
@@ -3900,21 +3900,21 @@ case 95:
 #line 3901 "parse.c"
 break;
 case 96:
-#line 971 "/root/openiked-portable/iked/parse.y"
+#line 971 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.mode = ipsec_mode;
 		}
 #line 3908 "parse.c"
 break;
 case 97:
-#line 974 "/root/openiked-portable/iked/parse.y"
+#line 974 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.mode = NULL;
 		}
 #line 3915 "parse.c"
 break;
 case 100:
-#line 983 "/root/openiked-portable/iked/parse.y"
+#line 983 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if ((ipsec_mode->xfs = recallocarray(ipsec_mode->xfs,
 			    ipsec_mode->nxfs, ipsec_mode->nxfs + 1,
@@ -3926,14 +3926,14 @@ case 100:
 #line 3927 "parse.c"
 break;
 case 101:
-#line 990 "/root/openiked-portable/iked/parse.y"
+#line 990 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			ipsec_mode->xfs[ipsec_mode->nxfs - 1] = yystack.l_mark[0].v.transforms;
 		}
 #line 3934 "parse.c"
 break;
 case 102:
-#line 995 "/root/openiked-portable/iked/parse.y"
+#line 995 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if ((ipsec_mode = calloc(1,
 			    sizeof(struct ipsec_mode))) == NULL)
@@ -3942,21 +3942,21 @@ case 102:
 #line 3943 "parse.c"
 break;
 case 103:
-#line 1000 "/root/openiked-portable/iked/parse.y"
+#line 1000 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.mode = ipsec_mode;
 		}
 #line 3950 "parse.c"
 break;
 case 104:
-#line 1003 "/root/openiked-portable/iked/parse.y"
+#line 1003 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.mode = NULL;
 		}
 #line 3957 "parse.c"
 break;
 case 107:
-#line 1012 "/root/openiked-portable/iked/parse.y"
+#line 1012 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if ((ipsec_mode->xfs = recallocarray(ipsec_mode->xfs,
 			    ipsec_mode->nxfs, ipsec_mode->nxfs + 1,
@@ -3968,91 +3968,91 @@ case 107:
 #line 3969 "parse.c"
 break;
 case 108:
-#line 1019 "/root/openiked-portable/iked/parse.y"
+#line 1019 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			ipsec_mode->xfs[ipsec_mode->nxfs - 1] = yystack.l_mark[0].v.transforms;
 		}
 #line 3976 "parse.c"
 break;
 case 109:
-#line 1024 "/root/openiked-portable/iked/parse.y"
+#line 1024 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.ikemode = yystack.l_mark[-4].v.ikemode | yystack.l_mark[-3].v.ikemode | yystack.l_mark[-2].v.ikemode | yystack.l_mark[-1].v.ikemode | yystack.l_mark[0].v.ikemode;
 		}
 #line 3983 "parse.c"
 break;
 case 110:
-#line 1029 "/root/openiked-portable/iked/parse.y"
+#line 1029 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = 0; }
 #line 3988 "parse.c"
 break;
 case 111:
-#line 1030 "/root/openiked-portable/iked/parse.y"
+#line 1030 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = IKED_POLICY_QUICK; }
 #line 3993 "parse.c"
 break;
 case 112:
-#line 1031 "/root/openiked-portable/iked/parse.y"
+#line 1031 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = IKED_POLICY_SKIP; }
 #line 3998 "parse.c"
 break;
 case 113:
-#line 1032 "/root/openiked-portable/iked/parse.y"
+#line 1032 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = IKED_POLICY_DEFAULT; }
 #line 4003 "parse.c"
 break;
 case 114:
-#line 1035 "/root/openiked-portable/iked/parse.y"
+#line 1035 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = IKED_POLICY_PASSIVE; }
 #line 4008 "parse.c"
 break;
 case 115:
-#line 1036 "/root/openiked-portable/iked/parse.y"
+#line 1036 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = IKED_POLICY_PASSIVE; }
 #line 4013 "parse.c"
 break;
 case 116:
-#line 1037 "/root/openiked-portable/iked/parse.y"
+#line 1037 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = IKED_POLICY_ACTIVE; }
 #line 4018 "parse.c"
 break;
 case 117:
-#line 1040 "/root/openiked-portable/iked/parse.y"
+#line 1040 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = 0; }
 #line 4023 "parse.c"
 break;
 case 118:
-#line 1041 "/root/openiked-portable/iked/parse.y"
+#line 1041 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = IKED_POLICY_IPCOMP; }
 #line 4028 "parse.c"
 break;
 case 119:
-#line 1044 "/root/openiked-portable/iked/parse.y"
+#line 1044 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = 0; }
 #line 4033 "parse.c"
 break;
 case 120:
-#line 1045 "/root/openiked-portable/iked/parse.y"
+#line 1045 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = 0; }
 #line 4038 "parse.c"
 break;
 case 121:
-#line 1046 "/root/openiked-portable/iked/parse.y"
+#line 1046 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = IKED_POLICY_TRANSPORT; }
 #line 4043 "parse.c"
 break;
 case 122:
-#line 1049 "/root/openiked-portable/iked/parse.y"
+#line 1049 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = 0; }
 #line 4048 "parse.c"
 break;
 case 123:
-#line 1050 "/root/openiked-portable/iked/parse.y"
+#line 1050 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{ yyval.v.ikemode = IKED_POLICY_NATT_FORCE; }
 #line 4053 "parse.c"
 break;
 case 124:
-#line 1053 "/root/openiked-portable/iked/parse.y"
+#line 1053 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.ikeauth.auth_method = IKEV2_AUTH_SIG_ANY;	/* default */
 			yyval.v.ikeauth.auth_eap = 0;
@@ -4061,7 +4061,7 @@ case 124:
 #line 4062 "parse.c"
 break;
 case 125:
-#line 1058 "/root/openiked-portable/iked/parse.y"
+#line 1058 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			memcpy(&yyval.v.ikeauth, &yystack.l_mark[0].v.ikekey, sizeof(yyval.v.ikeauth));
 			yyval.v.ikeauth.auth_method = IKEV2_AUTH_SHARED_KEY_MIC;
@@ -4071,7 +4071,7 @@ case 125:
 #line 4072 "parse.c"
 break;
 case 126:
-#line 1064 "/root/openiked-portable/iked/parse.y"
+#line 1064 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			unsigned int i;
 
@@ -4093,7 +4093,7 @@ case 126:
 #line 4094 "parse.c"
 break;
 case 127:
-#line 1082 "/root/openiked-portable/iked/parse.y"
+#line 1082 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			const struct ipsec_xf *xf;
 
@@ -4112,14 +4112,14 @@ case 127:
 #line 4113 "parse.c"
 break;
 case 128:
-#line 1099 "/root/openiked-portable/iked/parse.y"
+#line 1099 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.number = yystack.l_mark[0].v.number;
 		}
 #line 4120 "parse.c"
 break;
 case 129:
-#line 1102 "/root/openiked-portable/iked/parse.y"
+#line 1102 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			uint64_t	 bytes = 0;
 			char		 unit = 0;
@@ -4149,14 +4149,14 @@ case 129:
 #line 4150 "parse.c"
 break;
 case 130:
-#line 1130 "/root/openiked-portable/iked/parse.y"
+#line 1130 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.number = yystack.l_mark[0].v.number;
 		}
 #line 4157 "parse.c"
 break;
 case 131:
-#line 1133 "/root/openiked-portable/iked/parse.y"
+#line 1133 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			uint64_t	 seconds = 0;
 			char		 unit = 0;
@@ -4183,14 +4183,14 @@ case 131:
 #line 4184 "parse.c"
 break;
 case 132:
-#line 1158 "/root/openiked-portable/iked/parse.y"
+#line 1158 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.lifetime = deflifetime;
 		}
 #line 4191 "parse.c"
 break;
 case 133:
-#line 1161 "/root/openiked-portable/iked/parse.y"
+#line 1161 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.lifetime.lt_seconds = yystack.l_mark[0].v.number;
 			yyval.v.lifetime.lt_bytes = deflifetime.lt_bytes;
@@ -4198,7 +4198,7 @@ case 133:
 #line 4199 "parse.c"
 break;
 case 134:
-#line 1165 "/root/openiked-portable/iked/parse.y"
+#line 1165 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.lifetime.lt_seconds = yystack.l_mark[-2].v.number;
 			yyval.v.lifetime.lt_bytes = yystack.l_mark[0].v.number;
@@ -4206,21 +4206,21 @@ case 134:
 #line 4207 "parse.c"
 break;
 case 135:
-#line 1171 "/root/openiked-portable/iked/parse.y"
+#line 1171 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.number = 0;
 		}
 #line 4214 "parse.c"
 break;
 case 136:
-#line 1174 "/root/openiked-portable/iked/parse.y"
+#line 1174 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.number = yystack.l_mark[0].v.number;
 		}
 #line 4221 "parse.c"
 break;
 case 137:
-#line 1178 "/root/openiked-portable/iked/parse.y"
+#line 1178 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			uint8_t		*hex;
 
@@ -4248,7 +4248,7 @@ case 137:
 #line 4249 "parse.c"
 break;
 case 138:
-#line 1202 "/root/openiked-portable/iked/parse.y"
+#line 1202 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (parsekeyfile(yystack.l_mark[0].v.string, &yyval.v.ikekey) != 0) {
 				free(yystack.l_mark[0].v.string);
@@ -4259,7 +4259,7 @@ case 138:
 #line 4260 "parse.c"
 break;
 case 139:
-#line 1211 "/root/openiked-portable/iked/parse.y"
+#line 1211 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if ((ipsec_filters = calloc(1,
 			    sizeof(struct ipsec_filters))) == NULL)
@@ -4268,28 +4268,28 @@ case 139:
 #line 4269 "parse.c"
 break;
 case 140:
-#line 1216 "/root/openiked-portable/iked/parse.y"
+#line 1216 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.filters = ipsec_filters;
 		}
 #line 4276 "parse.c"
 break;
 case 141:
-#line 1219 "/root/openiked-portable/iked/parse.y"
+#line 1219 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.filters = NULL;
 		}
 #line 4283 "parse.c"
 break;
 case 144:
-#line 1229 "/root/openiked-portable/iked/parse.y"
+#line 1229 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			ipsec_filters->tag = yystack.l_mark[0].v.string;
 		}
 #line 4290 "parse.c"
 break;
 case 145:
-#line 1233 "/root/openiked-portable/iked/parse.y"
+#line 1233 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			const char	*errstr = NULL;
 			size_t		 len;
@@ -4313,21 +4313,21 @@ case 145:
 #line 4314 "parse.c"
 break;
 case 146:
-#line 1255 "/root/openiked-portable/iked/parse.y"
+#line 1255 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.string = NULL;
 		}
 #line 4321 "parse.c"
 break;
 case 147:
-#line 1258 "/root/openiked-portable/iked/parse.y"
+#line 1258 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			yyval.v.string = yystack.l_mark[0].v.string;
 		}
 #line 4328 "parse.c"
 break;
 case 148:
-#line 1263 "/root/openiked-portable/iked/parse.y"
+#line 1263 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			if (asprintf(&yyval.v.string, "%s %s", yystack.l_mark[-1].v.string, yystack.l_mark[0].v.string) == -1)
 				err(1, "string: asprintf");
@@ -4337,7 +4337,7 @@ case 148:
 #line 4338 "parse.c"
 break;
 case 150:
-#line 1273 "/root/openiked-portable/iked/parse.y"
+#line 1273 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			char *s = yystack.l_mark[-2].v.string;
 			log_debug("%s = \"%s\"\n", yystack.l_mark[-2].v.string, yystack.l_mark[0].v.string);
@@ -4358,7 +4358,7 @@ case 150:
 #line 4359 "parse.c"
 break;
 case 160:
-#line 1311 "/root/openiked-portable/iked/parse.y"
+#line 1311 "/root/fuzzing-openiked-portable/iked/parse.y"
 	{
 			int	 c;
 

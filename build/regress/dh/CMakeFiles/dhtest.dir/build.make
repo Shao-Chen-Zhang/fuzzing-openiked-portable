@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/openiked-portable
+CMAKE_SOURCE_DIR = /root/fuzzing-openiked-portable
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/openiked-portable/build
+CMAKE_BINARY_DIR = /root/fuzzing-openiked-portable/build
 
 # Include any dependencies generated for this target.
 include regress/dh/CMakeFiles/dhtest.dir/depend.make
@@ -73,88 +73,88 @@ regress/dh/CMakeFiles/dhtest.dir/codegen:
 .PHONY : regress/dh/CMakeFiles/dhtest.dir/codegen
 
 regress/dh/CMakeFiles/dhtest.dir/dhtest.c.o: regress/dh/CMakeFiles/dhtest.dir/flags.make
-regress/dh/CMakeFiles/dhtest.dir/dhtest.c.o: /root/openiked-portable/regress/dh/dhtest.c
+regress/dh/CMakeFiles/dhtest.dir/dhtest.c.o: /root/fuzzing-openiked-portable/regress/dh/dhtest.c
 regress/dh/CMakeFiles/dhtest.dir/dhtest.c.o: regress/dh/CMakeFiles/dhtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object regress/dh/CMakeFiles/dhtest.dir/dhtest.c.o"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/dhtest.c.o -MF CMakeFiles/dhtest.dir/dhtest.c.o.d -o CMakeFiles/dhtest.dir/dhtest.c.o -c /root/openiked-portable/regress/dh/dhtest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object regress/dh/CMakeFiles/dhtest.dir/dhtest.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/dhtest.c.o -MF CMakeFiles/dhtest.dir/dhtest.c.o.d -o CMakeFiles/dhtest.dir/dhtest.c.o -c /root/fuzzing-openiked-portable/regress/dh/dhtest.c
 
 regress/dh/CMakeFiles/dhtest.dir/dhtest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dhtest.dir/dhtest.c.i"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/regress/dh/dhtest.c > CMakeFiles/dhtest.dir/dhtest.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/regress/dh/dhtest.c > CMakeFiles/dhtest.dir/dhtest.c.i
 
 regress/dh/CMakeFiles/dhtest.dir/dhtest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dhtest.dir/dhtest.c.s"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/regress/dh/dhtest.c -o CMakeFiles/dhtest.dir/dhtest.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/regress/dh/dhtest.c -o CMakeFiles/dhtest.dir/dhtest.c.s
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o: regress/dh/CMakeFiles/dhtest.dir/flags.make
-regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o: /root/openiked-portable/iked/crypto_hash.c
+regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o: /root/fuzzing-openiked-portable/iked/crypto_hash.c
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o: regress/dh/CMakeFiles/dhtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o -c /root/openiked-portable/iked/crypto_hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o -c /root/fuzzing-openiked-portable/iked/crypto_hash.c
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.i"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/iked/crypto_hash.c > CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/iked/crypto_hash.c > CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.i
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.s"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/iked/crypto_hash.c -o CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/iked/crypto_hash.c -o CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.s
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.o: regress/dh/CMakeFiles/dhtest.dir/flags.make
-regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.o: /root/openiked-portable/iked/dh.c
+regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.o: /root/fuzzing-openiked-portable/iked/dh.c
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.o: regress/dh/CMakeFiles/dhtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.o"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/dh.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/dh.c.o -c /root/openiked-portable/iked/dh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/dh.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/dh.c.o -c /root/fuzzing-openiked-portable/iked/dh.c
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dhtest.dir/__/__/iked/dh.c.i"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/iked/dh.c > CMakeFiles/dhtest.dir/__/__/iked/dh.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/iked/dh.c > CMakeFiles/dhtest.dir/__/__/iked/dh.c.i
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/dh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dhtest.dir/__/__/iked/dh.c.s"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/iked/dh.c -o CMakeFiles/dhtest.dir/__/__/iked/dh.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/iked/dh.c -o CMakeFiles/dhtest.dir/__/__/iked/dh.c.s
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o: regress/dh/CMakeFiles/dhtest.dir/flags.make
-regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o: /root/openiked-portable/iked/smult_curve25519_ref.c
+regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o: /root/fuzzing-openiked-portable/iked/smult_curve25519_ref.c
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o: regress/dh/CMakeFiles/dhtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o -c /root/openiked-portable/iked/smult_curve25519_ref.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.o -c /root/fuzzing-openiked-portable/iked/smult_curve25519_ref.c
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.i"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/iked/smult_curve25519_ref.c > CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/iked/smult_curve25519_ref.c > CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.i
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.s"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/iked/smult_curve25519_ref.c -o CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/iked/smult_curve25519_ref.c -o CMakeFiles/dhtest.dir/__/__/iked/smult_curve25519_ref.c.s
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o: regress/dh/CMakeFiles/dhtest.dir/flags.make
-regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o: /root/openiked-portable/iked/sntrup761.c
+regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o: /root/fuzzing-openiked-portable/iked/sntrup761.c
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o: regress/dh/CMakeFiles/dhtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o -c /root/openiked-portable/iked/sntrup761.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.o -c /root/fuzzing-openiked-portable/iked/sntrup761.c
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.i"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/iked/sntrup761.c > CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/iked/sntrup761.c > CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.i
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.s"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/iked/sntrup761.c -o CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/iked/sntrup761.c -o CMakeFiles/dhtest.dir/__/__/iked/sntrup761.c.s
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o: regress/dh/CMakeFiles/dhtest.dir/flags.make
-regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o: /root/openiked-portable/iked/imsg_util.c
+regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o: /root/fuzzing-openiked-portable/iked/imsg_util.c
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o: regress/dh/CMakeFiles/dhtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o -c /root/openiked-portable/iked/imsg_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o"
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o -MF CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o.d -o CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.o -c /root/fuzzing-openiked-portable/iked/imsg_util.c
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.i"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/iked/imsg_util.c > CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.i
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/iked/imsg_util.c > CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.i
 
 regress/dh/CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.s"
-	cd /root/openiked-portable/build/regress/dh && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/iked/imsg_util.c -o CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.s
+	cd /root/fuzzing-openiked-portable/build/regress/dh && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/iked/imsg_util.c -o CMakeFiles/dhtest.dir/__/__/iked/imsg_util.c.s
 
 # Object files for target dhtest
 dhtest_OBJECTS = \
@@ -167,12 +167,12 @@ dhtest_OBJECTS = \
 
 # External object files for target dhtest
 dhtest_EXTERNAL_OBJECTS = \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/recallocarray.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/getrtable.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/getdtablecount.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/imsg.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/imsg-buffer.c.o" \
-"/root/openiked-portable/build/compat/CMakeFiles/compat.dir/freezero.c.o"
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/recallocarray.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/getrtable.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/getdtablecount.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/imsg.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/imsg-buffer.c.o" \
+"/root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/freezero.c.o"
 
 regress/dh/dhtest: regress/dh/CMakeFiles/dhtest.dir/dhtest.c.o
 regress/dh/dhtest: regress/dh/CMakeFiles/dhtest.dir/__/__/iked/crypto_hash.c.o
@@ -189,18 +189,18 @@ regress/dh/dhtest: compat/CMakeFiles/compat.dir/freezero.c.o
 regress/dh/dhtest: regress/dh/CMakeFiles/dhtest.dir/build.make
 regress/dh/dhtest: regress/dh/CMakeFiles/dhtest.dir/compiler_depend.ts
 regress/dh/dhtest: regress/dh/CMakeFiles/dhtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable dhtest"
-	cd /root/openiked-portable/build/regress/dh && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dhtest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable dhtest"
+	cd /root/fuzzing-openiked-portable/build/regress/dh && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dhtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 regress/dh/CMakeFiles/dhtest.dir/build: regress/dh/dhtest
 .PHONY : regress/dh/CMakeFiles/dhtest.dir/build
 
 regress/dh/CMakeFiles/dhtest.dir/clean:
-	cd /root/openiked-portable/build/regress/dh && $(CMAKE_COMMAND) -P CMakeFiles/dhtest.dir/cmake_clean.cmake
+	cd /root/fuzzing-openiked-portable/build/regress/dh && $(CMAKE_COMMAND) -P CMakeFiles/dhtest.dir/cmake_clean.cmake
 .PHONY : regress/dh/CMakeFiles/dhtest.dir/clean
 
 regress/dh/CMakeFiles/dhtest.dir/depend:
-	cd /root/openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/openiked-portable /root/openiked-portable/regress/dh /root/openiked-portable/build /root/openiked-portable/build/regress/dh /root/openiked-portable/build/regress/dh/CMakeFiles/dhtest.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/fuzzing-openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/fuzzing-openiked-portable /root/fuzzing-openiked-portable/regress/dh /root/fuzzing-openiked-portable/build /root/fuzzing-openiked-portable/build/regress/dh /root/fuzzing-openiked-portable/build/regress/dh/CMakeFiles/dhtest.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : regress/dh/CMakeFiles/dhtest.dir/depend
 

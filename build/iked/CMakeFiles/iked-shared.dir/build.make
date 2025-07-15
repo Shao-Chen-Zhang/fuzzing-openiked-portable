@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/openiked-portable
+CMAKE_SOURCE_DIR = /root/fuzzing-openiked-portable
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/openiked-portable/build
+CMAKE_BINARY_DIR = /root/fuzzing-openiked-portable/build
 
 # Include any dependencies generated for this target.
 include iked/CMakeFiles/iked-shared.dir/depend.make
@@ -69,102 +69,102 @@ include iked/CMakeFiles/iked-shared.dir/progress.make
 # Include the compile flags for this target's objects.
 include iked/CMakeFiles/iked-shared.dir/flags.make
 
-iked/ikev2_map.c: /root/openiked-portable/iked/ikev2.h
-iked/ikev2_map.c: /root/openiked-portable/iked/genmap.sh
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ikev2_map.c"
-	cd /root/openiked-portable/build/iked && sh /root/openiked-portable/iked/genmap.sh /root/openiked-portable/iked/ikev2.h ikev2 > ikev2_map.c
+iked/ikev2_map.c: /root/fuzzing-openiked-portable/iked/ikev2.h
+iked/ikev2_map.c: /root/fuzzing-openiked-portable/iked/genmap.sh
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ikev2_map.c"
+	cd /root/fuzzing-openiked-portable/build/iked && sh /root/fuzzing-openiked-portable/iked/genmap.sh /root/fuzzing-openiked-portable/iked/ikev2.h ikev2 > ikev2_map.c
 
-iked/eap_map.c: /root/openiked-portable/iked/eap.h
-iked/eap_map.c: /root/openiked-portable/iked/genmap.sh
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating eap_map.c"
-	cd /root/openiked-portable/build/iked && sh /root/openiked-portable/iked/genmap.sh /root/openiked-portable/iked/eap.h eap > eap_map.c
+iked/eap_map.c: /root/fuzzing-openiked-portable/iked/eap.h
+iked/eap_map.c: /root/fuzzing-openiked-portable/iked/genmap.sh
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating eap_map.c"
+	cd /root/fuzzing-openiked-portable/build/iked && sh /root/fuzzing-openiked-portable/iked/genmap.sh /root/fuzzing-openiked-portable/iked/eap.h eap > eap_map.c
 
 iked/CMakeFiles/iked-shared.dir/codegen:
 .PHONY : iked/CMakeFiles/iked-shared.dir/codegen
 
 iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o: iked/CMakeFiles/iked-shared.dir/flags.make
-iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o: /root/openiked-portable/iked/ikev2_pld.c
+iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o: /root/fuzzing-openiked-portable/iked/ikev2_pld.c
 iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o: iked/CMakeFiles/iked-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o -MF CMakeFiles/iked-shared.dir/ikev2_pld.c.o.d -o CMakeFiles/iked-shared.dir/ikev2_pld.c.o -c /root/openiked-portable/iked/ikev2_pld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o"
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o -MF CMakeFiles/iked-shared.dir/ikev2_pld.c.o.d -o CMakeFiles/iked-shared.dir/ikev2_pld.c.o -c /root/fuzzing-openiked-portable/iked/ikev2_pld.c
 
 iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iked-shared.dir/ikev2_pld.c.i"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/iked/ikev2_pld.c > CMakeFiles/iked-shared.dir/ikev2_pld.c.i
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/iked/ikev2_pld.c > CMakeFiles/iked-shared.dir/ikev2_pld.c.i
 
 iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iked-shared.dir/ikev2_pld.c.s"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/iked/ikev2_pld.c -o CMakeFiles/iked-shared.dir/ikev2_pld.c.s
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/iked/ikev2_pld.c -o CMakeFiles/iked-shared.dir/ikev2_pld.c.s
 
 iked/CMakeFiles/iked-shared.dir/imsg_util.c.o: iked/CMakeFiles/iked-shared.dir/flags.make
-iked/CMakeFiles/iked-shared.dir/imsg_util.c.o: /root/openiked-portable/iked/imsg_util.c
+iked/CMakeFiles/iked-shared.dir/imsg_util.c.o: /root/fuzzing-openiked-portable/iked/imsg_util.c
 iked/CMakeFiles/iked-shared.dir/imsg_util.c.o: iked/CMakeFiles/iked-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object iked/CMakeFiles/iked-shared.dir/imsg_util.c.o"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/imsg_util.c.o -MF CMakeFiles/iked-shared.dir/imsg_util.c.o.d -o CMakeFiles/iked-shared.dir/imsg_util.c.o -c /root/openiked-portable/iked/imsg_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object iked/CMakeFiles/iked-shared.dir/imsg_util.c.o"
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/imsg_util.c.o -MF CMakeFiles/iked-shared.dir/imsg_util.c.o.d -o CMakeFiles/iked-shared.dir/imsg_util.c.o -c /root/fuzzing-openiked-portable/iked/imsg_util.c
 
 iked/CMakeFiles/iked-shared.dir/imsg_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iked-shared.dir/imsg_util.c.i"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/iked/imsg_util.c > CMakeFiles/iked-shared.dir/imsg_util.c.i
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/iked/imsg_util.c > CMakeFiles/iked-shared.dir/imsg_util.c.i
 
 iked/CMakeFiles/iked-shared.dir/imsg_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iked-shared.dir/imsg_util.c.s"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/iked/imsg_util.c -o CMakeFiles/iked-shared.dir/imsg_util.c.s
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/iked/imsg_util.c -o CMakeFiles/iked-shared.dir/imsg_util.c.s
 
 iked/CMakeFiles/iked-shared.dir/log.c.o: iked/CMakeFiles/iked-shared.dir/flags.make
-iked/CMakeFiles/iked-shared.dir/log.c.o: /root/openiked-portable/iked/log.c
+iked/CMakeFiles/iked-shared.dir/log.c.o: /root/fuzzing-openiked-portable/iked/log.c
 iked/CMakeFiles/iked-shared.dir/log.c.o: iked/CMakeFiles/iked-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object iked/CMakeFiles/iked-shared.dir/log.c.o"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/log.c.o -MF CMakeFiles/iked-shared.dir/log.c.o.d -o CMakeFiles/iked-shared.dir/log.c.o -c /root/openiked-portable/iked/log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object iked/CMakeFiles/iked-shared.dir/log.c.o"
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/log.c.o -MF CMakeFiles/iked-shared.dir/log.c.o.d -o CMakeFiles/iked-shared.dir/log.c.o -c /root/fuzzing-openiked-portable/iked/log.c
 
 iked/CMakeFiles/iked-shared.dir/log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iked-shared.dir/log.c.i"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/iked/log.c > CMakeFiles/iked-shared.dir/log.c.i
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/iked/log.c > CMakeFiles/iked-shared.dir/log.c.i
 
 iked/CMakeFiles/iked-shared.dir/log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iked-shared.dir/log.c.s"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/iked/log.c -o CMakeFiles/iked-shared.dir/log.c.s
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/iked/log.c -o CMakeFiles/iked-shared.dir/log.c.s
 
 iked/CMakeFiles/iked-shared.dir/util.c.o: iked/CMakeFiles/iked-shared.dir/flags.make
-iked/CMakeFiles/iked-shared.dir/util.c.o: /root/openiked-portable/iked/util.c
+iked/CMakeFiles/iked-shared.dir/util.c.o: /root/fuzzing-openiked-portable/iked/util.c
 iked/CMakeFiles/iked-shared.dir/util.c.o: iked/CMakeFiles/iked-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object iked/CMakeFiles/iked-shared.dir/util.c.o"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/util.c.o -MF CMakeFiles/iked-shared.dir/util.c.o.d -o CMakeFiles/iked-shared.dir/util.c.o -c /root/openiked-portable/iked/util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object iked/CMakeFiles/iked-shared.dir/util.c.o"
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/util.c.o -MF CMakeFiles/iked-shared.dir/util.c.o.d -o CMakeFiles/iked-shared.dir/util.c.o -c /root/fuzzing-openiked-portable/iked/util.c
 
 iked/CMakeFiles/iked-shared.dir/util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iked-shared.dir/util.c.i"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/iked/util.c > CMakeFiles/iked-shared.dir/util.c.i
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/iked/util.c > CMakeFiles/iked-shared.dir/util.c.i
 
 iked/CMakeFiles/iked-shared.dir/util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iked-shared.dir/util.c.s"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/iked/util.c -o CMakeFiles/iked-shared.dir/util.c.s
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/iked/util.c -o CMakeFiles/iked-shared.dir/util.c.s
 
 iked/CMakeFiles/iked-shared.dir/ikev2_map.c.o: iked/CMakeFiles/iked-shared.dir/flags.make
 iked/CMakeFiles/iked-shared.dir/ikev2_map.c.o: iked/ikev2_map.c
 iked/CMakeFiles/iked-shared.dir/ikev2_map.c.o: iked/CMakeFiles/iked-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object iked/CMakeFiles/iked-shared.dir/ikev2_map.c.o"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/ikev2_map.c.o -MF CMakeFiles/iked-shared.dir/ikev2_map.c.o.d -o CMakeFiles/iked-shared.dir/ikev2_map.c.o -c /root/openiked-portable/build/iked/ikev2_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object iked/CMakeFiles/iked-shared.dir/ikev2_map.c.o"
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/ikev2_map.c.o -MF CMakeFiles/iked-shared.dir/ikev2_map.c.o.d -o CMakeFiles/iked-shared.dir/ikev2_map.c.o -c /root/fuzzing-openiked-portable/build/iked/ikev2_map.c
 
 iked/CMakeFiles/iked-shared.dir/ikev2_map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iked-shared.dir/ikev2_map.c.i"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/build/iked/ikev2_map.c > CMakeFiles/iked-shared.dir/ikev2_map.c.i
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/build/iked/ikev2_map.c > CMakeFiles/iked-shared.dir/ikev2_map.c.i
 
 iked/CMakeFiles/iked-shared.dir/ikev2_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iked-shared.dir/ikev2_map.c.s"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/build/iked/ikev2_map.c -o CMakeFiles/iked-shared.dir/ikev2_map.c.s
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/build/iked/ikev2_map.c -o CMakeFiles/iked-shared.dir/ikev2_map.c.s
 
 iked/CMakeFiles/iked-shared.dir/eap_map.c.o: iked/CMakeFiles/iked-shared.dir/flags.make
 iked/CMakeFiles/iked-shared.dir/eap_map.c.o: iked/eap_map.c
 iked/CMakeFiles/iked-shared.dir/eap_map.c.o: iked/CMakeFiles/iked-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object iked/CMakeFiles/iked-shared.dir/eap_map.c.o"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/eap_map.c.o -MF CMakeFiles/iked-shared.dir/eap_map.c.o.d -o CMakeFiles/iked-shared.dir/eap_map.c.o -c /root/openiked-portable/build/iked/eap_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object iked/CMakeFiles/iked-shared.dir/eap_map.c.o"
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT iked/CMakeFiles/iked-shared.dir/eap_map.c.o -MF CMakeFiles/iked-shared.dir/eap_map.c.o.d -o CMakeFiles/iked-shared.dir/eap_map.c.o -c /root/fuzzing-openiked-portable/build/iked/eap_map.c
 
 iked/CMakeFiles/iked-shared.dir/eap_map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iked-shared.dir/eap_map.c.i"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/build/iked/eap_map.c > CMakeFiles/iked-shared.dir/eap_map.c.i
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/build/iked/eap_map.c > CMakeFiles/iked-shared.dir/eap_map.c.i
 
 iked/CMakeFiles/iked-shared.dir/eap_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iked-shared.dir/eap_map.c.s"
-	cd /root/openiked-portable/build/iked && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/build/iked/eap_map.c -o CMakeFiles/iked-shared.dir/eap_map.c.s
+	cd /root/fuzzing-openiked-portable/build/iked && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/build/iked/eap_map.c -o CMakeFiles/iked-shared.dir/eap_map.c.s
 
 iked-shared: iked/CMakeFiles/iked-shared.dir/ikev2_pld.c.o
 iked-shared: iked/CMakeFiles/iked-shared.dir/imsg_util.c.o
@@ -180,11 +180,11 @@ iked/CMakeFiles/iked-shared.dir/build: iked-shared
 .PHONY : iked/CMakeFiles/iked-shared.dir/build
 
 iked/CMakeFiles/iked-shared.dir/clean:
-	cd /root/openiked-portable/build/iked && $(CMAKE_COMMAND) -P CMakeFiles/iked-shared.dir/cmake_clean.cmake
+	cd /root/fuzzing-openiked-portable/build/iked && $(CMAKE_COMMAND) -P CMakeFiles/iked-shared.dir/cmake_clean.cmake
 .PHONY : iked/CMakeFiles/iked-shared.dir/clean
 
 iked/CMakeFiles/iked-shared.dir/depend: iked/eap_map.c
 iked/CMakeFiles/iked-shared.dir/depend: iked/ikev2_map.c
-	cd /root/openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/openiked-portable /root/openiked-portable/iked /root/openiked-portable/build /root/openiked-portable/build/iked /root/openiked-portable/build/iked/CMakeFiles/iked-shared.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/fuzzing-openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/fuzzing-openiked-portable /root/fuzzing-openiked-portable/iked /root/fuzzing-openiked-portable/build /root/fuzzing-openiked-portable/build/iked /root/fuzzing-openiked-portable/build/iked/CMakeFiles/iked-shared.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : iked/CMakeFiles/iked-shared.dir/depend
 

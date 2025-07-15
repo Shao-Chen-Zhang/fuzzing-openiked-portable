@@ -1,4 +1,4 @@
-# Install script for directory: /root/openiked-portable/ikectl
+# Install script for directory: /root/fuzzing-openiked-portable/ikectl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -52,7 +52,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/sbin" TYPE EXECUTABLE FILES "/root/openiked-portable/build/ikectl/ikectl")
+  file(INSTALL DESTINATION "/usr/local/sbin" TYPE EXECUTABLE FILES "/root/fuzzing-openiked-portable/build/ikectl/ikectl")
   if(EXISTS "$ENV{DESTDIR}/usr/local/sbin/ikectl" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/sbin/ikectl")
     file(RPATH_CHANGE
@@ -74,7 +74,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/man/man8" TYPE FILE FILES "/root/openiked-portable/ikectl/ikectl.8")
+  file(INSTALL DESTINATION "/usr/local/man/man8" TYPE FILE FILES "/root/fuzzing-openiked-portable/ikectl/ikectl.8")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -86,7 +86,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/etc/ssl" TYPE FILE FILES "/root/openiked-portable/ikectl/ikeca.cnf")
+  file(INSTALL DESTINATION "/usr/local/etc/ssl" TYPE FILE FILES "/root/fuzzing-openiked-portable/ikectl/ikeca.cnf")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -98,12 +98,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/etc/ssl" TYPE FILE FILES "/root/openiked-portable/ikectl/ikex509v3.cnf")
+  file(INSTALL DESTINATION "/usr/local/etc/ssl" TYPE FILE FILES "/root/fuzzing-openiked-portable/ikectl/ikex509v3.cnf")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/root/openiked-portable/build/ikectl/install_local_manifest.txt"
+  file(WRITE "/root/fuzzing-openiked-portable/build/ikectl/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

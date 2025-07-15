@@ -1,0 +1,4 @@
+/root/fuzzing-openiked-portable/build/iked/iked
+-d
+-f
+/root/fuzzing-openiked-portable/iked.conf

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/openiked-portable
+CMAKE_SOURCE_DIR = /root/fuzzing-openiked-portable
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/openiked-portable/build
+CMAKE_BINARY_DIR = /root/fuzzing-openiked-portable/build
 
 # Include any dependencies generated for this target.
 include compat/CMakeFiles/compat.dir/depend.make
@@ -73,88 +73,88 @@ compat/CMakeFiles/compat.dir/codegen:
 .PHONY : compat/CMakeFiles/compat.dir/codegen
 
 compat/CMakeFiles/compat.dir/recallocarray.c.o: compat/CMakeFiles/compat.dir/flags.make
-compat/CMakeFiles/compat.dir/recallocarray.c.o: /root/openiked-portable/compat/recallocarray.c
+compat/CMakeFiles/compat.dir/recallocarray.c.o: /root/fuzzing-openiked-portable/compat/recallocarray.c
 compat/CMakeFiles/compat.dir/recallocarray.c.o: compat/CMakeFiles/compat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object compat/CMakeFiles/compat.dir/recallocarray.c.o"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/recallocarray.c.o -MF CMakeFiles/compat.dir/recallocarray.c.o.d -o CMakeFiles/compat.dir/recallocarray.c.o -c /root/openiked-portable/compat/recallocarray.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object compat/CMakeFiles/compat.dir/recallocarray.c.o"
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/recallocarray.c.o -MF CMakeFiles/compat.dir/recallocarray.c.o.d -o CMakeFiles/compat.dir/recallocarray.c.o -c /root/fuzzing-openiked-portable/compat/recallocarray.c
 
 compat/CMakeFiles/compat.dir/recallocarray.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compat.dir/recallocarray.c.i"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/compat/recallocarray.c > CMakeFiles/compat.dir/recallocarray.c.i
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/compat/recallocarray.c > CMakeFiles/compat.dir/recallocarray.c.i
 
 compat/CMakeFiles/compat.dir/recallocarray.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compat.dir/recallocarray.c.s"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/compat/recallocarray.c -o CMakeFiles/compat.dir/recallocarray.c.s
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/compat/recallocarray.c -o CMakeFiles/compat.dir/recallocarray.c.s
 
 compat/CMakeFiles/compat.dir/getrtable.c.o: compat/CMakeFiles/compat.dir/flags.make
-compat/CMakeFiles/compat.dir/getrtable.c.o: /root/openiked-portable/compat/getrtable.c
+compat/CMakeFiles/compat.dir/getrtable.c.o: /root/fuzzing-openiked-portable/compat/getrtable.c
 compat/CMakeFiles/compat.dir/getrtable.c.o: compat/CMakeFiles/compat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object compat/CMakeFiles/compat.dir/getrtable.c.o"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/getrtable.c.o -MF CMakeFiles/compat.dir/getrtable.c.o.d -o CMakeFiles/compat.dir/getrtable.c.o -c /root/openiked-portable/compat/getrtable.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object compat/CMakeFiles/compat.dir/getrtable.c.o"
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/getrtable.c.o -MF CMakeFiles/compat.dir/getrtable.c.o.d -o CMakeFiles/compat.dir/getrtable.c.o -c /root/fuzzing-openiked-portable/compat/getrtable.c
 
 compat/CMakeFiles/compat.dir/getrtable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compat.dir/getrtable.c.i"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/compat/getrtable.c > CMakeFiles/compat.dir/getrtable.c.i
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/compat/getrtable.c > CMakeFiles/compat.dir/getrtable.c.i
 
 compat/CMakeFiles/compat.dir/getrtable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compat.dir/getrtable.c.s"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/compat/getrtable.c -o CMakeFiles/compat.dir/getrtable.c.s
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/compat/getrtable.c -o CMakeFiles/compat.dir/getrtable.c.s
 
 compat/CMakeFiles/compat.dir/getdtablecount.c.o: compat/CMakeFiles/compat.dir/flags.make
-compat/CMakeFiles/compat.dir/getdtablecount.c.o: /root/openiked-portable/compat/getdtablecount.c
+compat/CMakeFiles/compat.dir/getdtablecount.c.o: /root/fuzzing-openiked-portable/compat/getdtablecount.c
 compat/CMakeFiles/compat.dir/getdtablecount.c.o: compat/CMakeFiles/compat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object compat/CMakeFiles/compat.dir/getdtablecount.c.o"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/getdtablecount.c.o -MF CMakeFiles/compat.dir/getdtablecount.c.o.d -o CMakeFiles/compat.dir/getdtablecount.c.o -c /root/openiked-portable/compat/getdtablecount.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object compat/CMakeFiles/compat.dir/getdtablecount.c.o"
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/getdtablecount.c.o -MF CMakeFiles/compat.dir/getdtablecount.c.o.d -o CMakeFiles/compat.dir/getdtablecount.c.o -c /root/fuzzing-openiked-portable/compat/getdtablecount.c
 
 compat/CMakeFiles/compat.dir/getdtablecount.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compat.dir/getdtablecount.c.i"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/compat/getdtablecount.c > CMakeFiles/compat.dir/getdtablecount.c.i
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/compat/getdtablecount.c > CMakeFiles/compat.dir/getdtablecount.c.i
 
 compat/CMakeFiles/compat.dir/getdtablecount.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compat.dir/getdtablecount.c.s"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/compat/getdtablecount.c -o CMakeFiles/compat.dir/getdtablecount.c.s
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/compat/getdtablecount.c -o CMakeFiles/compat.dir/getdtablecount.c.s
 
 compat/CMakeFiles/compat.dir/imsg.c.o: compat/CMakeFiles/compat.dir/flags.make
-compat/CMakeFiles/compat.dir/imsg.c.o: /root/openiked-portable/compat/imsg.c
+compat/CMakeFiles/compat.dir/imsg.c.o: /root/fuzzing-openiked-portable/compat/imsg.c
 compat/CMakeFiles/compat.dir/imsg.c.o: compat/CMakeFiles/compat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object compat/CMakeFiles/compat.dir/imsg.c.o"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/imsg.c.o -MF CMakeFiles/compat.dir/imsg.c.o.d -o CMakeFiles/compat.dir/imsg.c.o -c /root/openiked-portable/compat/imsg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object compat/CMakeFiles/compat.dir/imsg.c.o"
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/imsg.c.o -MF CMakeFiles/compat.dir/imsg.c.o.d -o CMakeFiles/compat.dir/imsg.c.o -c /root/fuzzing-openiked-portable/compat/imsg.c
 
 compat/CMakeFiles/compat.dir/imsg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compat.dir/imsg.c.i"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/compat/imsg.c > CMakeFiles/compat.dir/imsg.c.i
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/compat/imsg.c > CMakeFiles/compat.dir/imsg.c.i
 
 compat/CMakeFiles/compat.dir/imsg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compat.dir/imsg.c.s"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/compat/imsg.c -o CMakeFiles/compat.dir/imsg.c.s
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/compat/imsg.c -o CMakeFiles/compat.dir/imsg.c.s
 
 compat/CMakeFiles/compat.dir/imsg-buffer.c.o: compat/CMakeFiles/compat.dir/flags.make
-compat/CMakeFiles/compat.dir/imsg-buffer.c.o: /root/openiked-portable/compat/imsg-buffer.c
+compat/CMakeFiles/compat.dir/imsg-buffer.c.o: /root/fuzzing-openiked-portable/compat/imsg-buffer.c
 compat/CMakeFiles/compat.dir/imsg-buffer.c.o: compat/CMakeFiles/compat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object compat/CMakeFiles/compat.dir/imsg-buffer.c.o"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/imsg-buffer.c.o -MF CMakeFiles/compat.dir/imsg-buffer.c.o.d -o CMakeFiles/compat.dir/imsg-buffer.c.o -c /root/openiked-portable/compat/imsg-buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object compat/CMakeFiles/compat.dir/imsg-buffer.c.o"
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/imsg-buffer.c.o -MF CMakeFiles/compat.dir/imsg-buffer.c.o.d -o CMakeFiles/compat.dir/imsg-buffer.c.o -c /root/fuzzing-openiked-portable/compat/imsg-buffer.c
 
 compat/CMakeFiles/compat.dir/imsg-buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compat.dir/imsg-buffer.c.i"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/compat/imsg-buffer.c > CMakeFiles/compat.dir/imsg-buffer.c.i
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/compat/imsg-buffer.c > CMakeFiles/compat.dir/imsg-buffer.c.i
 
 compat/CMakeFiles/compat.dir/imsg-buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compat.dir/imsg-buffer.c.s"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/compat/imsg-buffer.c -o CMakeFiles/compat.dir/imsg-buffer.c.s
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/compat/imsg-buffer.c -o CMakeFiles/compat.dir/imsg-buffer.c.s
 
 compat/CMakeFiles/compat.dir/freezero.c.o: compat/CMakeFiles/compat.dir/flags.make
-compat/CMakeFiles/compat.dir/freezero.c.o: /root/openiked-portable/compat/freezero.c
+compat/CMakeFiles/compat.dir/freezero.c.o: /root/fuzzing-openiked-portable/compat/freezero.c
 compat/CMakeFiles/compat.dir/freezero.c.o: compat/CMakeFiles/compat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object compat/CMakeFiles/compat.dir/freezero.c.o"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/freezero.c.o -MF CMakeFiles/compat.dir/freezero.c.o.d -o CMakeFiles/compat.dir/freezero.c.o -c /root/openiked-portable/compat/freezero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/fuzzing-openiked-portable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object compat/CMakeFiles/compat.dir/freezero.c.o"
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT compat/CMakeFiles/compat.dir/freezero.c.o -MF CMakeFiles/compat.dir/freezero.c.o.d -o CMakeFiles/compat.dir/freezero.c.o -c /root/fuzzing-openiked-portable/compat/freezero.c
 
 compat/CMakeFiles/compat.dir/freezero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compat.dir/freezero.c.i"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/openiked-portable/compat/freezero.c > CMakeFiles/compat.dir/freezero.c.i
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/fuzzing-openiked-portable/compat/freezero.c > CMakeFiles/compat.dir/freezero.c.i
 
 compat/CMakeFiles/compat.dir/freezero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compat.dir/freezero.c.s"
-	cd /root/openiked-portable/build/compat && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/openiked-portable/compat/freezero.c -o CMakeFiles/compat.dir/freezero.c.s
+	cd /root/fuzzing-openiked-portable/build/compat && /usr/local/afl++-llvm/bin/afl-clang-lto $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/fuzzing-openiked-portable/compat/freezero.c -o CMakeFiles/compat.dir/freezero.c.s
 
 compat: compat/CMakeFiles/compat.dir/recallocarray.c.o
 compat: compat/CMakeFiles/compat.dir/getrtable.c.o
@@ -170,10 +170,10 @@ compat/CMakeFiles/compat.dir/build: compat
 .PHONY : compat/CMakeFiles/compat.dir/build
 
 compat/CMakeFiles/compat.dir/clean:
-	cd /root/openiked-portable/build/compat && $(CMAKE_COMMAND) -P CMakeFiles/compat.dir/cmake_clean.cmake
+	cd /root/fuzzing-openiked-portable/build/compat && $(CMAKE_COMMAND) -P CMakeFiles/compat.dir/cmake_clean.cmake
 .PHONY : compat/CMakeFiles/compat.dir/clean
 
 compat/CMakeFiles/compat.dir/depend:
-	cd /root/openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/openiked-portable /root/openiked-portable/compat /root/openiked-portable/build /root/openiked-portable/build/compat /root/openiked-portable/build/compat/CMakeFiles/compat.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/fuzzing-openiked-portable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/fuzzing-openiked-portable /root/fuzzing-openiked-portable/compat /root/fuzzing-openiked-portable/build /root/fuzzing-openiked-portable/build/compat /root/fuzzing-openiked-portable/build/compat/CMakeFiles/compat.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : compat/CMakeFiles/compat.dir/depend
 

@@ -1,4 +1,4 @@
-/* Automatically generated from /root/openiked-portable/iked/eap.h, do not edit */
+/* Automatically generated from /root/fuzzing-openiked-portable/iked/eap.h, do not edit */
 /*	$OpenBSD: eap.h,v 1.6 2020/09/16 21:37:35 tobhe Exp $	*/
 
 /*

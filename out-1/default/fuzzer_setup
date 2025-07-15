@@ -1,0 +1,7 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/root/fuzzing-openiked-portable/build/iked/iked
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-d -f /root/fuzzing-openiked-portable/iked.conf
+AFL_CUSTOM_INFO_OUT=/root/fuzzing-openiked-portable/out/default
+AFL_USE_ASAN=1
+# command line:
+'afl-fuzz' '-i' '/root/fuzzing-openiked-portable/seeds' '-o' '/root/fuzzing-openiked-portable/out' '--' '/root/fuzzing-openiked-portable/build/iked/iked' '-d' '-f' '/root/fuzzing-openiked-portable/iked.conf'
